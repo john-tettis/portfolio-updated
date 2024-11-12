@@ -9,9 +9,7 @@ const Bio = ()=>{
             <h1 className='name slide-in one'>John Tettis</h1>
             <h3 className='title slide-in one'>Backend Engineer</h3>
             <div>
-            <p className="desc slide-in two"> <bold>Hi!</bold> I'm a software engineer skilled in Python and JavaScript, with a focus on backend development, database management, and data analysis. 
-               
-                 </p>
+            <p className="desc slide-in two"> I build scalable and elegant solutions for data driven businesses. </p>
                 <div className="desc-container slide-in three">
                     <div className='sub-desc'>
                         <p>
