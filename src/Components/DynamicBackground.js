@@ -4,7 +4,7 @@ const DynamicBackground = () => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
-    const backgroundColor = (o = 1) =>`rgba(72, 162, 68,${o})`;
+    const backgroundColor = 'rgb(72, 162, 68)';
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
 
@@ -12,7 +12,7 @@ const DynamicBackground = () => {
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
-      ctx.fillStyle = backgroundColor(); // Set your desired background color here
+      ctx.fillStyle = backgroundColor; // Set your desired background color here
       ctx.fillRect(0, 0, canvas.width, canvas.height);
     };
     resizeCanvas();
@@ -29,28 +29,34 @@ const DynamicBackground = () => {
       constructor(x, y) {
         this.x = x;
         this.y = y;
-        this.radiusConstant = 6;
+        this.radiusConstant = 5;
         this.radius = this.radiusConstant;
         this.color = `hsl(${Math.random() * 20 + 48}, 100%, 56%)`;
         
 
-        this.speedX = (Math.random() - 0.5) * 8;
-        this.speedY = (Math.random() - 0.5) * 8;
+        this.speedX = (Math.random() - 0.5) * 4;
+        this.speedY = (Math.random() - 0.5) * 4;
         this.alive = true;
         this.reversed = false;
       }
 
       update() {
         
-        if (this.radius > 0) {
+        if (this.radius > 0 || this.reversed) {
           this.x += this.speedX;
           this.y += this.speedY;
-          this.radius +=  -0.2;
+          this.radius += this.reversed ? 0.2 : -0.2;
         }
-        else {
-          this.radius=0;
+        if (this.reversed && this.radius >=this.radiusConstant+1) {
           this.alive = false;
         }
+      }
+      reverse(){
+          this.reversed = true;
+          this.radius = .5;
+          this.speedX = -this.speedX;
+          this.speedY = -this.speedY;
+          this.color = backgroundColor; // Use background color for reversal
       }
       draw() {
         if (this.radius > 0 || this.reversed) {
@@ -104,16 +110,18 @@ const DynamicBackground = () => {
     canvas.addEventListener('mouseleave',()=>lastMousePos = null);
 
     // Animate particles
-   
     const animate = () => {
-      ctx.fillStyle = backgroundColor(.1); // Set your desired background color here
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-      particles = particles.filter((particle,i) => {
+      for(let i=particles.length-1;i>=0;i--){
+        let particle = particles[i]
         particle.update();
         particle.draw();
-        return particle.alive;
-      });
-
+        if(i< (particles.length - maxParticles) && !particle.reversed &&particle.radius <=0){
+          particle.reverse()
+        }
+        if(!particle.alive){
+          particles.splice(i,1)
+        }
+      }
 
       requestAnimationFrame(animate);
     };
