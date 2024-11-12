@@ -1,0 +1,6 @@
+.body-content{
+    max-width:800px;
+    display: flex;
+    flex-direction: row;
+
+}
