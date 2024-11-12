@@ -2,5 +2,9 @@
     max-width:800px;
     display: flex;
     flex-direction: row;
+    gap:1rem;
+    background:rgba(72, 162, 68,.5);
+    border-radius:1px 5px 5px 1px;
+    margin-top: 10rem;
 
 }
