@@ -7,7 +7,7 @@ const ScrollSection= forwardRef((props,ref)=>{
 
 
     return(
-    <div ref={ref}className='scroll-section'>
+    <div ref={ref}className='scroll-section fade-in'>
         <Description/>
         <WorkHistory/>
         
