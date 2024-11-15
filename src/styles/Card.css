@@ -3,6 +3,7 @@
     flex-direction:row;
 }
 .card-column-left{
+    margin-top:1.2rem;
     width:25%;
 }
 .card-column-right{
@@ -25,6 +26,8 @@
 
 }
 
- .card-skills{
+.card-skills{
+    margin-top:1.3rem;
+    
     margin-right:.31em
 } 
