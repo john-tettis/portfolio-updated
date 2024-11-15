@@ -4,13 +4,13 @@ import React, { useEffect, useRef } from 'react';
 import '../styles/BodyContent.css'
 import ScrollSection from './ScrollSection';
 
-const BodyContent= ()=>{
+const BodyContent= ({scrollRef})=>{
 
 
     return(
     <div className='body-content'>
         <Column><Bio/></Column>
-        <Column><ScrollSection/></Column>
+        <Column><ScrollSection ref={scrollRef}/></Column>
 
         
     </div>
