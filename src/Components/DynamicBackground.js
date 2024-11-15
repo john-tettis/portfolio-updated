@@ -17,7 +17,6 @@ const DynamicBackground = () => {
     };
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
-
    //globla variable storage
     let particles = [];
     const particleCount = 2;
@@ -31,7 +30,8 @@ const DynamicBackground = () => {
         this.y = y;
         this.radiusConstant = 5;
         this.radius = this.radiusConstant;
-        this.color = `hsl(${Math.random() * 20 + 48}, 100%, 56%)`;
+        // this.color = `hsl(${Math.random() * 20 + 48}, 100%, 56%)`;
+        this.color = `hsl(${Math.random() * 20 + 80}, 80%, 56%)`;
         
 
         this.speedX = (Math.random() - 0.5) * 4;
