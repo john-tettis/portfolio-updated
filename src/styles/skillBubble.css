@@ -1,0 +1,13 @@
+
+.skill-bubble {
+    display: inline-block; /* Makes it behave like an inline element */
+    padding: 5px 6px; /* Optional: Adjust padding for some spacing around the text */
+    background-color:#008273; /* Background color */
+    color:#34f341;
+    border-radius: 20px; /* Pill shape */
+    margin: 0 .2rem .2rem 0;
+    font-size: 14px; /* Text size */
+    font-weight: 400; /* Optional: makes text bold */
+    text-align: center; /* Center the text horizontally */
+  }
+  

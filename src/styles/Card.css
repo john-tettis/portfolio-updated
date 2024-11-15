@@ -1,0 +1,30 @@
+.card{
+    display:flex;
+    flex-direction:row;
+}
+.card-column-left{
+    width:25%;
+}
+.card-column-right{
+    width:75%;
+}
+
+.card-title{
+    margin-bottom:0;
+
+}
+.card-company{
+    margin-top:.2rem;
+    font-size: .8rem;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.card-description{
+
+
+}
+
+ .card-skills{
+    margin-right:.31em
+} 
