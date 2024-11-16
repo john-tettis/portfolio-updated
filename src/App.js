@@ -11,7 +11,6 @@ function App() {
     const handleWheel = (event) => {
       if (scrollableSectionRef.current) {
         scrollableSectionRef.current.scrollTop += event.deltaY; // Adjust scroll based on mouse wheel movement
-        console.log(event)
       }
     };
 
