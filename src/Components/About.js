@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from 'react';
-import '../styles/description.css'
+import React, { forwardRef} from 'react';
+import '../styles/about.css'
  
-const Description= ({children})=>{
+const About= forwardRef((props,ref)=>{
 
 
     return(
-    <div className='description'>
+    <section ref={ref} id="about" className='description'>
         <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
          Cras neque dui, interdum tempus lacus ac, iaculis pharetra lorem. Sed ultricies dolor quis elit 
@@ -41,11 +41,11 @@ const Description= ({children})=>{
            tincidunt nisl, ut feugiat lectus fringilla at. Duis laoreet dui semper porttitor semper. Nulla facilisi. 
         </p>
 
-    </div>
+    </section>
         
 
     )
 
-}
+});
 
-export default Description
+export default About
