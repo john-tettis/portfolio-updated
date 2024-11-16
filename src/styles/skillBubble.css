@@ -1,7 +1,7 @@
 @import url('color.css');
 .skill-bubble {
     display: inline-block; /* Makes it behave like an inline element */
-    padding: 5px 6px; /* Optional: Adjust padding for some spacing around the text */
+    padding: 8px 10px; /* Optional: Adjust padding for some spacing around the text */
     background-color:var(--color-2); /* Background color */
     color:var(--color-5);;
     border-radius: 20px; /* Pill shape */
