@@ -4,7 +4,9 @@ const DynamicBackground = () => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
-    const backgroundColor = '#003135';
+    
+    const backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-1').trim();
+    
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
 
