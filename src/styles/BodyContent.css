@@ -1,9 +1,11 @@
+
+
 .body-content{
     max-width:80rem;
     display: flex;
     flex-direction: row;
     gap:1rem;
-    background:rgba(72, 162, 68,.8);
+    background:rgba(0, 49, 53,.8);
     border-radius:3px;
     margin-top: 10rem;
 

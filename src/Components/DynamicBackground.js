@@ -4,7 +4,7 @@ const DynamicBackground = () => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
-    const backgroundColor = 'rgb(72, 162, 68)';
+    const backgroundColor = '#003135';
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
 
@@ -31,7 +31,7 @@ const DynamicBackground = () => {
         this.radiusConstant = 5;
         this.radius = this.radiusConstant;
         // this.color = `hsl(${Math.random() * 20 + 48}, 100%, 56%)`;
-        this.color = `hsl(${Math.random() * 20 + 80}, 80%, 56%)`;
+        this.color = `hsl(${Math.random() * 20 + 186}, 95%, 16%)`;
         
 
         this.speedX = (Math.random() - 0.5) * 4;
@@ -53,7 +53,7 @@ const DynamicBackground = () => {
       }
       reverse(){
           this.reversed = true;
-          this.radius = .5;
+          this.radius = .8;
           this.speedX = -this.speedX;
           this.speedY = -this.speedY;
           this.color = backgroundColor; // Use background color for reversal

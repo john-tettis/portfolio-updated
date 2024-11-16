@@ -1,9 +1,11 @@
+@import url('color.css');
+
 .bio{
     color:white;
     text-align:left;
     padding: 0 2rem;   
     
-    border-left: solid 3px  	#ffb700;
+    border-left: solid 3px var(--color-3);
     overflow-x: hidden;
     
 }
@@ -20,7 +22,8 @@
 }
 
 .sub-desc{
-    color:rgb(255, 249, 84);
+    color:var(--color-3);
+    font-weight: 500;
     max-width: 10rem;
     margin-right: 3rem;
     
