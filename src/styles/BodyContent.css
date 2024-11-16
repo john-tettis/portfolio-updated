@@ -10,3 +10,10 @@
     margin-top: 10rem;
 
 }
+
+@media  screen and (max-width:1199px) {
+    .body-content{
+        flex-direction: column;
+    }
+    
+}

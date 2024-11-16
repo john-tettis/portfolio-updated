@@ -9,8 +9,8 @@ function App() {
 
   useEffect(() => {
     const handleWheel = (event) => {
-      if (scrollableSectionRef.current) {
-        scrollableSectionRef.current.scrollTop += event.deltaY; // Adjust scroll based on mouse wheel movement
+      if (scrollableSectionRef.current && window.matchMedia('(min-width: 1200px)')) {
+        scrollableSectionRef.current.scrollTop += event.deltaY * 1.7; // Adjust scroll based on mouse wheel movement
       }
     };
 
