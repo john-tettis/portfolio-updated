@@ -1,6 +1,10 @@
+@import url('color.css');
 .card{
     display:flex;
     flex-direction:row;
+    padding:.5rem;
+    margin:.5rem;
+    border-radius:5px;
 }
 .card-column-left{
     margin-top:1.2rem;
@@ -30,3 +34,9 @@
     margin-top:1.3rem;
     margin-right:.31em
 } 
+
+.card:hover{
+    box-shadow: -1px 3px 3px rgba(0, 0, 0, 0.2); 
+    border-top: 1px solid var(--color-6);
+    background: var(--color-2)
+}
