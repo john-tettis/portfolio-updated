@@ -43,12 +43,11 @@
 }
 
 .card-skills{
-    margin-top:1.3rem;
+    margin-top:1.8rem;
 } 
 
 .card:hover{
     box-shadow: -1px 3px 3px rgba(0, 0, 0, 0.2); 
-    border-top: 1px solid var(--color-6);
     background: var(--color-1a)
 }
 
@@ -63,6 +62,9 @@
     .card-row-bottom{
        flex-direction:column-reverse;
     }
+    .card-skills{
+        margin-top:.5rem;
+    } 
     
     
 }
