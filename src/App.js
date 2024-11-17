@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import MobileNav from './Components/MobileNav';
 import { useEffect, useRef } from 'react';
 import './styles/App.css';
 import DynamicBackground from './Components/DynamicBackground';
@@ -6,6 +6,11 @@ import BodyContent from './Components/BodyContent'
 
 function App() {
   const scrollableSectionRef = useRef(null);
+  const navRefs ={
+    about: useRef(null),
+    experience: useRef(null),
+    rojects: useRef(null)
+}
 
   useEffect(() => {
     const handleWheel = (event) => {
@@ -24,9 +29,11 @@ function App() {
   }, []);
   return (
     <div className="App">
+      <MobileNav navRefs={navRefs}/>
       <DynamicBackground/>
       <BodyContent
       scrollRef = {scrollableSectionRef}
+      navRefs={navRefs}
       />
     </div>
   );

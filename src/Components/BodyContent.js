@@ -5,12 +5,8 @@ import '../styles/BodyContent.css'
 import Nav from './Nav';
 import ScrollSection from './ScrollSection';
 
-const BodyContent= ({scrollRef})=>{
-    const navRefs ={
-        about: useRef(null),
-        experience: useRef(null),
-        rojects: useRef(null)
-    }
+const BodyContent= ({scrollRef,navRefs})=>{
+    
     return(
     <div className='body-content'>
         <Column>
