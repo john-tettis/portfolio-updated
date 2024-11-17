@@ -7,29 +7,30 @@ import '../styles/workHistory.css'
 const history = [
     {
         title:"Language Model Engineer",
-        company:"DATA ANNOTATION",
-        description:`
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Cras neque dui, interdum tempus lacus ac, iaculis pharetra lorem. Sed ultricies dolor quis elit 
-        convallis accumsan. Suspendisse sapien felis, volutpat quis purus nec, consectetur condimentum orci.
-        Nunc sed risus diam. Sed viverra elit sit amet iaculis maximus. Proin euismod semper risus. Aliquam semper
-        tincidunt nisl, ut feugiat lectus fringilla at. Duis laoreet dui semper porttitor semper. Nulla facilisi. 
+        company:"Data Annotation Technologies",
+        description:`Specialized in enhancing the accuracy and scalability of 
+        five diverse language models by annotating datasets and creating thorough 
+        tests in Python and JavaScript. Developed and improved solid code solutions, 
+        utilizing modular design and detailed documentation. 
+        Aimed at boosting model performance through careful dataset tagging 
+        and strict validation protocols.
         `,
-        duration:"2024 - Present",
-        skills:["Python", "Flask","JavaScript", "Express","SQL", "Data Analytics"]
+
+        duration:"April 2024 - Present",
+        skills:["Flask","Node.js", "Express","React","SQL", "Data Analytics"]
     },
     {
-        title:"Language Model Engineer",
-        company:"DATA ANNOTATION",
-        description:`
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Cras neque dui, interdum tempus lacus ac, iaculis pharetra lorem. Sed ultricies dolor quis elit 
-        convallis accumsan. Suspendisse sapien felis, volutpat quis purus nec, consectetur condimentum orci.
-        Nunc sed risus diam. Sed viverra elit sit amet iaculis maximus. Proin euismod semper risus. Aliquam semper
-        tincidunt nisl, ut feugiat lectus fringilla at. Duis laoreet dui semper porttitor semper. Nulla facilisi. 
-        `,
-        duration:"2024 - Present",
-        skills:["Python", "Flask","JavaScript", "Express","SQL", "Data Analytics"]
+        title:"Marketing Representative",
+        company:"Renewal by Andersem",
+        description:`Streamlined operational workflows by creating custom Microsoft 
+        Teams bots, which greatly improved team communication and task management. 
+        Automated performance metric integrations using tools like Microsoft VBA and  Python, 
+        allowing for more effective tracking and analysis. Conducted regular training 
+        sessions and offered peer coaching to improve team performance and field results. 
+        Led collaborative efforts to enhance marketing strategies, 
+        consistently achieving measurable outcomes.`,
+        duration:"Jan 2023 - April 2024",
+        skills:["Python", "VBA","Plotly","numPy", "Flask","SQL", "Data Analytics"]
     }
     
 
