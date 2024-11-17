@@ -7,9 +7,15 @@ const WorkCard= ({title, company, description, duration,skills})=>{
 
     return(
     <div className='card'>
-        <div className="card-column-left">
-            <h4>{duration}</h4>
-            <div className="card-skills">
+        <div className="card-row-top">
+            <h4 className="duration column-left">{duration}</h4>
+            <div className='card-right column-right'>
+                <h4 className='card-title'>{title}</h4>
+                <p className="card-company">{company}</p>
+            </div>
+        </div>
+         <div className="card-row-bottom">
+         <div className="card-skills column-left">
                 {skills.map((skill, index) => (
                     <SkillBubble 
                         key={index} 
@@ -17,11 +23,7 @@ const WorkCard= ({title, company, description, duration,skills})=>{
                     />
                 ))}
             </div>
-        </div>
-         <div className="card-column-right">
-            <h4 className='card-title'>{title}</h4>
-            <p className="card-company">{company}</p>
-            <p className="card-description">{description}</p>
+            <p className="card-description column-right">{description}</p>
             
 
         </div>
