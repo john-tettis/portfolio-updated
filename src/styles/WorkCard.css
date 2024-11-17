@@ -1,21 +1,29 @@
 @import url('color.css');
 .card{
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     padding:.5rem;
     margin:.5rem;
     border-radius:5px;
 }
-.card-column-left{
-    margin-top:1.2rem;
-    width:25%;
+.card-row-top{
+    display:flex;
+    flex-direction:row;
+    justify-content: left;
+    align-items: end;
 }
-.card-column-right{
-    width:75%;
+.card-row-bottom{
+    display:flex;
+   flex-direction:row;
 }
 
+
+.duration{
+    margin-bottom: .7rem;
+}
 .card-title{
     margin-bottom:0;
+    font-size:18px
 
 }
 .card-company{
@@ -26,17 +34,35 @@
 }
 
 .card-description{
-
+    color:#9fbbe9;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    
 
 }
 
 .card-skills{
     margin-top:1.3rem;
-    margin-right:.31em
 } 
 
 .card:hover{
     box-shadow: -1px 3px 3px rgba(0, 0, 0, 0.2); 
     border-top: 1px solid var(--color-6);
     background: var(--color-1a)
+}
+
+.column-left{
+    flex:1
+}
+.column-right{
+    flex:3
+}
+
+@media  screen and (max-width:1199px) {
+    .card-row-bottom{
+       flex-direction:column-reverse;
+    }
+    
+    
 }
