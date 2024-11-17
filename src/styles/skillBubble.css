@@ -5,7 +5,7 @@
     background-color:var(--color-3); /* Background color */
     color:var(--color-6);
     border-radius: 20px; /* Pill shape */
-    margin: 0 .2rem .2rem 0;
+    margin: 3px;
     font-size: 12px; /* Text size */
     font-weight: 600; /* Optional: makes text bold */
     text-align: center; /* Center the text horizontally */
