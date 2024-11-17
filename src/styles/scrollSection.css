@@ -1,6 +1,6 @@
 .scroll-section{
-    
-    
+    text-align:left;
+    color:white;
 }
 @media  screen and (min-width:1200px) {
     .scroll-section{
