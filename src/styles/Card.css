@@ -24,25 +24,13 @@
 }
 
 
-.duration{
-    white-space: pre-wrap;
-    font-size:.8rem;
-    font-weight: 400;
-    color:var(--color-6);
-    margin-bottom: .8rem;
-}
+
 .card-title{
     margin-bottom:0;
-    font-size:18px
-
+    font-size:18px;
+    margin-top:.3rem;
+    
 }
-.card-company{
-    margin-top:.2rem;
-    font-size: .8rem;
-    font-weight: 600;
-    font-style: oblique;
-}
-
 .card-description{
     color:#9fbbe9;
     font-size: 16px;
@@ -59,6 +47,38 @@
 .card:hover{
     box-shadow: -1px 3px 3px rgba(0, 0, 0, 0.2); 
     background: var(--color-1a)
+}
+
+
+
+/* Work card only */
+.card-company{
+    margin-top:.2rem;
+    font-size: .8rem;
+    font-weight: 600;
+    font-style: oblique;
+}
+.duration{
+    white-space: pre-wrap;
+    font-size:.8rem;
+    font-weight: 400;
+    color:var(--color-6);
+    margin-bottom: .8rem;
+}
+
+/* Project Card only */
+.card-image{
+    margin-top:.3rem;
+    width:130px;
+    border-radius:5px;
+}
+.project-card{
+    flex-direction:row;
+    align-items:top;
+}
+.project-card:hover .card-title{
+    color:var(--color-3);
+    text-decoration: underline;
 }
 
 

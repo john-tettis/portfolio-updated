@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import SkillBubble from './SkillBubble'
-import '../../styles/WorkCard.css'
+import '../../styles/Card.css'
 
 const WorkCard= ({title, company, description, start,end,skills})=>{
 
