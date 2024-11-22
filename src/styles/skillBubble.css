@@ -1,13 +1,13 @@
 @import url('color.css');
 .skill-bubble {
     display: inline-block; /* Makes it behave like an inline element */
-    padding: 8px 10px; /* Optional: Adjust padding for some spacing around the text */
+    vertical-align: middle;
+    padding: 4px 6px; /* Optional: Adjust padding for some spacing around the text */
     background-color:var(--color-3); /* Background color */
     color:var(--color-6);
-    border-radius: 20px; /* Pill shape */
-    margin: 3px;
+    border-radius: 20px; /* Pill shape */    margin: 3px;
     font-size: 12px; /* Text size */
-    font-weight: 600; /* Optional: makes text bold */
+    font-weight: 500; /* Optional: makes text bold */
     text-align: center; /* Center the text horizontally */
     white-space: nowrap; /* Prevents text wrapping */
   }
