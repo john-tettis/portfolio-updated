@@ -1,30 +1,20 @@
 import React, { useEffect, useRef } from 'react';
 import SkillBubble from './SkillBubble'
-import '../../styles/WorkCard.css'
+import '../../styles/Card.css'
 
-const ProjectCard= ({title, link, description, img})=>{
-
+const ProjectCard= ({title, link, description, imgUrl})=>{
+    const handleClick = () => {
+        window.open(link);
+    };
 
     return(
-    <div className='card'>
-        <div className="card-row-top">
-           
-            <div className='card-right column-right'>
-                <h4 className='card-title'><a href={link}>{title}</a></h4>
-            </div>
+    <div onClick ={handleClick}className='card project-card'>    
+         <div className="card-column-left"> 
+            <img className='card-image' src={imgUrl}></img>
         </div>
-         <div className="card-row-bottom">
-         <div className="card-skills column-left">
-                {skills.map((skill, index) => (
-                    <SkillBubble 
-                        key={index} 
-                        skill={skill}
-                    />
-                ))}
-            </div>
+        <div className="card-column-right">
+            <h4 className='card-title card-link'>{title}</h4>
             <p className="card-description column-right">{description}</p>
-            
-
         </div>
     </div>
         
