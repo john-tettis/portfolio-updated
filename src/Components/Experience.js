@@ -16,7 +16,8 @@ const history = [
         and strict validation protocols.
         `,
 
-        duration:"April 2024 - Present",
+        start:"April 2024",
+        end:"Present",
         skills:["Flask","Node.js", "Express","React","SQL", "Data Analytics"]
     },
     {
@@ -29,7 +30,8 @@ const history = [
         sessions and offered peer coaching to improve team performance and field results. 
         Led collaborative efforts to enhance marketing strategies, 
         consistently achieving measurable outcomes.`,
-        duration:"Jan 2023 - April 2024",
+        start:"Jan 2023",
+        end:"April 2024",
         skills:["Python", "VBA","Plotly","numPy", "Flask","SQL", "Data Analytics"]
     }
     
@@ -43,7 +45,8 @@ const Experience= forwardRef((props,ref)=>{
         {history.map((job, index) => (
           <WorkCard 
             key={index} 
-            duration={job.duration}
+            start={job.start}
+            end={job.end}
             title={job.title} 
             company={job.company} 
             description={job.description} 

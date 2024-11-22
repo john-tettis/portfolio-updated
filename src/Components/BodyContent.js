@@ -9,7 +9,7 @@ const BodyContent= ({scrollRef,navRefs})=>{
     
     return(
     <div className='body-content'>
-        <Column>
+        <Column left={true}>
             <Bio />
             <Nav
             navRefs={navRefs}
