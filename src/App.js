@@ -9,7 +9,7 @@ function App() {
   const navRefs ={
     about: useRef(null),
     experience: useRef(null),
-    rojects: useRef(null)
+    projects: useRef(null)
 }
 
   useEffect(() => {
