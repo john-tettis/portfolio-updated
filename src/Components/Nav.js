@@ -23,7 +23,7 @@ const Nav = ({navRefs})=>{
         <div className="nav desktop">
             <li> <a className={activeSection == "about" ? "active" : ""}onClick={()=>scrollTo(about)}>About</a></li>
             <li> <a className={activeSection == "experience" ? "active" : ""}onClick={()=>scrollTo(experience)}>Experience</a></li>
-            <li> <a className={activeSection == "" ? "projects" : ""}onClick={()=>scrollTo(projects)}>Projects</a></li>
+            <li> <a className={activeSection == "projects" ? "active" : ""}onClick={()=>scrollTo(projects)}>Projects</a></li>
         </div>
     )
 
