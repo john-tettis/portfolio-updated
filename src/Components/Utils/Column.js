@@ -2,11 +2,11 @@ import Bio from '../Bio';
 import React, { useEffect, useRef } from 'react';
 import '../../styles/Column.css'
 
-const Column= ({children})=>{
+const Column= ({children, left})=>{
 
-
+    const classname= left ? 'column column-left':'column'
     return(
-    <div className='column'>
+    <div className={classname}>
         {children}
     </div>
         

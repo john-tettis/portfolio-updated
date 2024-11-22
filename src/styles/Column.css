@@ -1,9 +1,13 @@
 
 .column{
     /* background-color: rgba(139, 118, 255, 0.3); */
-    max-width:35rem;
+    max-width:40rem;
     overflow-x: hidden;
 
 }
 
+.column-left{
+    max-width:30rem;
+
+}
 
