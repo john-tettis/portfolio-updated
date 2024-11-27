@@ -1,16 +1,16 @@
-@import url('color.css');
+@import url('Color.css');
 
 .bio{
     color:white;
     text-align:left;
-    padding: 0 2rem;   
+    padding: 0 1rem;   
     
     border-left: solid 3px var(--color-3);
     overflow-x: hidden;
     
 }
 .name {
-    font-size: 5rem;
+    font-size: 4.5rem;
     line-height: 1;
     margin-top:0;
     margin-bottom:.4rem;
@@ -24,8 +24,9 @@
 .sub-desc{
     color:var(--color-3);
     font-weight: 500;
-    max-width: 10rem;
-    margin-right: 3rem;
+    width:50%;
+    padding:4px
+    /* margin-right: 3rem */
     
 
 }
