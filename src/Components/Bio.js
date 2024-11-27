@@ -13,7 +13,7 @@ const Bio = ()=>{
                 <div className="desc-container slide-in three">
                     <div className='sub-desc'>
                         <p>
-                           Builds efficient, streamlined, and robust solutions. 
+                           Builds efficient and streamlined solutions. 
 
                         </p>
                         
