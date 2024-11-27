@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import {Link} from 'react-scroll'
 import '../styles/Nav.css'
 import useSectionObserver from './hooks/useSectionObserver';
 const Nav = ({navRefs})=>{

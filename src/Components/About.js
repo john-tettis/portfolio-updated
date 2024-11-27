@@ -1,5 +1,5 @@
 import React, { forwardRef} from 'react';
-import '../styles/about.css'
+import '../styles/About.css'
  
 const About= forwardRef((props,ref)=>{
 

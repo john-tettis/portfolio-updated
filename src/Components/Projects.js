@@ -1,7 +1,7 @@
 
 import React, {forwardRef} from 'react';
 import ProjectCard from './Utils/ProjectCard'
-import '../styles/workHistory.css'
+import '../styles/WorkHistory.css'
 import raspberryPI from '../Assets/Images/raspberry-pi.png'
 
 

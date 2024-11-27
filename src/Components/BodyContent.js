@@ -1,6 +1,6 @@
+import React, { useEffect, useRef } from 'react';
 import Bio from './Bio';
 import Column from './Utils/Column';
-import React, { useEffect, useRef } from 'react';
 import '../styles/BodyContent.css'
 import Nav from './Nav';
 import ScrollSection from './ScrollSection';

@@ -1,7 +1,7 @@
 
 import React, { forwardRef } from 'react';
 import WorkCard from './Utils/WorkCard'
-import '../styles/workHistory.css'
+import '../styles/WorkHistory.css'
 
 
 const history = [
