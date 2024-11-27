@@ -1,4 +1,4 @@
-@import url('color.css');
+@import url('Color.css');
 .card{
     display:flex;
     flex-direction:column;
@@ -10,14 +10,13 @@
     display:flex;
     flex-direction:row;
     justify-content: left;
-    align-items: end;
 }
 .card-row-bottom{
     display:flex;
    flex-direction:row;
 }
 .card-column-left{
-    flex:1
+    flex:1;
 }
 .card-column-right{
     flex:3
@@ -36,13 +35,13 @@
     font-size: 16px;
     line-height: 1.6;
     font-family: 'Roboto', sans-serif;
-    
+    margin-top:.1rem;
 
 }
 
 .card-skills{
     margin-right:.3rem;
-    margin-top:1.8rem;
+    margin-top:.6rem;
 } 
 
 .card:hover{
@@ -55,22 +54,29 @@
 /* Work card only */
 .card-company{
     margin-top:.2rem;
+    margin-bottom:0;
     font-size: .8rem;
     font-weight: 600;
-    font-style: oblique;
+    /* font-style: oblique; */
+    color:var(--color-4)
 }
 .duration{
+    position:relative;
+    margin:0;
+    top:.7rem;
     white-space: pre-wrap;
     font-size:.8rem;
     font-weight: 400;
     color:var(--color-6);
-    margin-bottom: .8rem;
+    
 }
 
 /* Project Card only */
 .card-image{
-    margin-top:.3rem;
+    margin-top:auto;
+    margin-bottom:auto;
     width:130px;
+    height:90px;
     border-radius:5px;
 }
 .project-card{
@@ -80,6 +86,9 @@
 .project-card:hover .card-title{
     color:var(--color-3);
     text-decoration: underline;
+}
+.project-card:hover{
+    cursor:pointer;
 }
 
 
@@ -91,6 +100,9 @@
     .card-skills{
         margin-top:.5rem;
     } 
+    .duration{
+        margin-bottom: 1.9rem;
+    }
     
     
 }
