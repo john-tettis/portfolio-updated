@@ -1,4 +1,4 @@
-import '../../styles/skillBubble.css'
+import '../../styles/SkillBubble.css'
 
 
 
