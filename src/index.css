@@ -8,7 +8,7 @@ body {
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-
+  overflow-x:hidden;
 }
 section{
   scroll-snap-align: center;
