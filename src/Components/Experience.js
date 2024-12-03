@@ -1,7 +1,8 @@
 
 import React, { forwardRef } from 'react';
 import WorkCard from './Utils/WorkCard'
-import '../styles/WorkHistory.css'
+import '../styles/Experience.css'
+import SectionHeader from './Utils/SectionHeader';
 
 
 const history = [
@@ -42,6 +43,7 @@ const Experience= forwardRef((props,ref)=>{
 
     return(
     <section id='experience' ref={ref}className='work-history'>
+        <SectionHeader>Experience</SectionHeader>
         {history.map((job, index) => (
           <WorkCard 
             key={index} 

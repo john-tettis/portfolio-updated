@@ -1,4 +1,5 @@
 import React, { forwardRef} from 'react';
+import SectionHeader from './Utils/SectionHeader';
 import '../styles/About.css'
  
 const About= forwardRef((props,ref)=>{
@@ -6,6 +7,7 @@ const About= forwardRef((props,ref)=>{
 
     return(
     <section ref={ref} id="about" className='description'>
+         <SectionHeader>About</SectionHeader>
         <p className="about-paragraph">
             Combining my background in software engineering with a strong marketing focus, I excel at creating solutions that 
             connect technical advancements with business goals. While at Renewal by Andersen, I built a comprehensive metric 

@@ -1,9 +1,9 @@
 
 import React, {forwardRef} from 'react';
 import ProjectCard from './Utils/ProjectCard'
-import '../styles/WorkHistory.css'
 import raspberryPI from '../Assets/Images/raspberry-pi.png'
 import dat from '../Assets/Images/DAT.jpg'
+import SectionHeader from './Utils/SectionHeader';
 
 
 const projects = [
@@ -35,6 +35,7 @@ const Projects =  forwardRef((props,ref)=>{
 
     return(
     <section ref={ref} id='projects'>
+        <SectionHeader>Projects</SectionHeader>
         {projects.map((p, index) => (
           <ProjectCard 
             key={index} 

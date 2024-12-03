@@ -1,0 +1,13 @@
+.section-header{
+    margin-left:1rem;
+    margin-bottom:0rem;
+}
+
+.section-header::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 10px;
+  }
