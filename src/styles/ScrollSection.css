@@ -1,34 +1,34 @@
 @import url('Color.css');
 
-.scroll-section{
-    text-align:left;
-    color:white;
+
+
+/* Scrollbar styling (WebKit-based browsers) */
+.scroll-section::-webkit-scrollbar {
+  width: 12px; /* Scrollbar width */
+  background:var(--color-2);
 }
 
-  /* Scrollbar styling (WebKit-based browsers) */
-  .scroll-section::-webkit-scrollbar {
-    width: 12px; /* Scrollbar width */
-  }
+.scroll-section::-webkit-scrollbar-track {
+  
+  border-radius: 6px;
+}
 
-  .scroll-section::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Track color */
-    border-radius: 6px;
-  }
+.scroll-section::-webkit-scrollbar-thumb {
+  background: rgb(169, 146, 116); /* Thumb color */
+  border-radius: 50%;
+}
 
-  .scroll-section::-webkit-scrollbar-thumb {
-    background:var(--color-2); /* Thumb color */
-    border-radius: 50%;
-  }
+.scroll-section::-webkit-scrollbar-thumb:hover {
+  background: #ffff; /* Thumb hover color */
+}
 
-  .scroll-section::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Thumb hover color */
-  }
-
-  /* For Firefox (use scrollbar-color and scrollbar-width) */
-  .scroll-section {
-    scrollbar-width: thin; /* Thin scrollbar */
-    scrollbar-color: var(--color-2) #f1f1f1; /* Thumb color and track color */
-  }
+/* Non WebKit-based browsers */
+.scroll-section{
+  text-align:left;
+  color:white;
+  scrollbar-color: rgb(169, 146, 116) var(--color-2);
+  scrollbar-width: thin;
+}
 @media  screen and (min-width:1200px) {
     .scroll-section{
         max-height:40rem;
