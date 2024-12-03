@@ -73,3 +73,11 @@ animation: slideIn .8s ease forwards;
     animation: slideIn 1s ease forwards;
     animation-delay: .3s;
 }
+
+
+@media  screen and (max-width:1199px) {
+    .name{
+        font-size:3.8rem
+    }
+    
+}
