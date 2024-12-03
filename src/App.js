@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 import './styles/App.css';
 import DynamicBackground from './Components/DynamicBackground';
 import BodyContent from './Components/BodyContent'
+import debounce from 'lodash/debounce';
 
 function App() {
   const scrollableSectionRef = useRef(null);
@@ -12,21 +13,22 @@ function App() {
     projects: useRef(null)
 }
 
-  useEffect(() => {
-    const handleWheel = (event) => {
-      if (scrollableSectionRef.current && window.matchMedia('(min-width: 1200px)')) {
-        scrollableSectionRef.current.scrollTop += event.deltaY * 1.7; // Adjust scroll based on mouse wheel movement
-      }
-    };
 
-    // Listen for mouse wheel events on the body
-    document.body.addEventListener('wheel', handleWheel);
 
-    // Clean up event listener on component unmount
-    return () => {
-      document.body.removeEventListener('wheel', handleWheel);
-    };
-  }, []);
+useEffect(() => {
+  const handleWheel = debounce((event) => {
+    if (scrollableSectionRef.current && window.matchMedia('(min-width: 1200px)').matches) {
+      scrollableSectionRef.current.scrollTop += event.deltaY; 
+    }
+  }, 16); // Throttle to ~60fps
+
+  document.body.addEventListener('wheel', handleWheel);
+
+  return () => {
+    document.body.removeEventListener('wheel', handleWheel);
+  };
+}, []);
+
   return (
     <div className="App">
       <MobileNav navRefs={navRefs}/>
