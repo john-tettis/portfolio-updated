@@ -2,7 +2,7 @@
 .skill-bubble {
     display: inline-block; /* Makes it behave like an inline element */
     vertical-align: middle;
-    padding: 4px 6px; /* Optional: Adjust padding for some spacing around the text */
+    padding: 5px 8px; /* Optional: Adjust padding for some spacing around the text */
     background-color:var(--color-3); /* Background color */
     color:var(--color-1);
     border-radius: 20px; /* Pill shape */    margin: 3px;
