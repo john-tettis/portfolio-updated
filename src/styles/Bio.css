@@ -1,13 +1,25 @@
 @import url('Color.css');
 
 .bio{
+    position: relative;
     color:white;
     text-align:left;
-    padding: 0 1rem;   
-    
-    border-left: solid 3px var(--color-3);
+    padding: 0 1rem;
+    height:20rem; 
+    margin:1rem;
+    /* border-left: solid 3px var(--color-3); */
     overflow-x: hidden;
     
+}
+.bio::before {
+    content: '';
+    position:absolute;
+    left:0;
+    top:0;
+    width: 4px;
+    height: 80%;
+    background-color:var(--color-3);
+    border-radius: 30px;
 }
 .name {
     font-size: 4.5rem;
