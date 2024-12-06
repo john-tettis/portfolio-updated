@@ -1,9 +1,9 @@
 @import url('Color.css');
 .nav{
-    margin-top:3rem;
-    display: flex;
-    flex-direction: column;
-    margin-left: .5rem; 
+  margin-top:3rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem; 
 }
 
 .nav > li{
