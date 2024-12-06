@@ -2,8 +2,8 @@
 .card{
     display:flex;
     flex-direction:column;
-    padding:0 .5rem;
-    margin:0 .5rem;
+    padding:.5rem;
+    margin:.5rem;
     border-radius:5px;
 }
 .card-row-top{
@@ -98,17 +98,17 @@
        flex-direction:column-reverse;
     }
     .card-row-top{
-        flex-direction:row-reverse;
-        align-items:end;
+        flex-direction:column-reverse;
+        
+        /* align-items:end; */
      }
-    .card-column-right{
-        flex:1
-    }
+     
     .card-skills{
         margin-top:.5rem;
     } 
     .duration{
-        margin-bottom: 1.9rem;
+        margin-top:-.5rem;
+        margin-bottom: .3rem;
     }
     .card-image{
         margin-right:.5rem;
