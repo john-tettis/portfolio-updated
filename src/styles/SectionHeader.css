@@ -6,8 +6,8 @@
 .section-header::after {
     content: '';
     display: block;
-    width: 200px;
-    height: 2px;
+    width: 80%;
+    height: 1px;
     background-color: white;
     margin-bottom: 10px;
   }
