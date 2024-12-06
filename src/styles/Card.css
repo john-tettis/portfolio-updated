@@ -97,6 +97,13 @@
     .card-row-bottom{
        flex-direction:column-reverse;
     }
+    .card-row-top{
+        flex-direction:row-reverse;
+        align-items:end;
+     }
+    .card-column-right{
+        flex:1
+    }
     .card-skills{
         margin-top:.5rem;
     } 
