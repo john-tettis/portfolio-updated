@@ -19,7 +19,7 @@ const Nav = ({navRefs})=>{
     
 
     return(
-        <div className="nav desktop">
+        <div className="nav desktop fade-in">
             <li> <a className={activeSection == "about" ? "active" : ""}onClick={()=>scrollTo(about)}>About</a></li>
             <li> <a className={activeSection == "experience" ? "active" : ""}onClick={()=>scrollTo(experience)}>Experience</a></li>
             <li> <a className={activeSection == "projects" ? "active" : ""}onClick={()=>scrollTo(projects)}>Projects</a></li>
