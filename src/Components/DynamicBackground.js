@@ -6,7 +6,6 @@ const DynamicBackground = () => {
   useEffect(() => {
     
     const backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-1').trim();
-    
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
 
@@ -33,7 +32,7 @@ const DynamicBackground = () => {
         this.radiusConstant = 5;
         this.radius = this.radiusConstant;
         // this.color = `hsl(${Math.random() * 20 + 48}, 100%, 56%)`;
-        this.color = `hsl(${Math.random() * 20 + 186}, 95%, 16%)`;
+        this.color = `hsl(${Math.random() * 20 + 260}, 100%, 78%)`;
         
 
         this.speedX = (Math.random() - 0.5) * 4;

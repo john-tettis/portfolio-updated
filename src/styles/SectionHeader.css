@@ -1,6 +1,7 @@
 .section-header{
     margin-left:1rem;
     margin-bottom:0rem;
+    color:var(--color-2)
 }
 
 .section-header::after {
@@ -8,6 +9,6 @@
     display: block;
     width: 200px;
     height: 2px;
-    background-color: white;
+    background-color:var(--color-2);
     margin-bottom: 10px;
   }

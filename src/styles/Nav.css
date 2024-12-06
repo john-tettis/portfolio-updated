@@ -10,7 +10,7 @@
     display:inline;
     list-style:none ;
     text-align: left;
-    color:white;
+    color:wvar(--caolor-3);
     font-size:1.3rem;
     margin-bottom:.5rem;
     font-weight: 600;
@@ -26,12 +26,19 @@
 
 .nav a:not(.active):hover {
   color:var(--color-5);
-  text-shadow: 0 0 5px rgba(15, 164, 175, 0.7), 0 0 10px rgba(15, 164, 175, 0.5);
+  text-shadow: 0 0 5px var(--color-4), 0 0 10px var(--color-3);
 }
 .active{
-  color:var(--color-3)
+  color:var(--color-4)
 }
-
+.active::after {
+  content: '';
+  display: block;
+  width: 33%;
+  height: 2px;
+  background-color:var(--color-4);
+  margin-bottom: 10px;
+}
 .mobile-nav {
   margin:0;
   display:none;
