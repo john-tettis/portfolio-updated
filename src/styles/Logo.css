@@ -1,0 +1,30 @@
+.logo {
+    animation:
+      dash 2s linear infinite,
+      spin 2s linear infinite;
+  }
+  
+  @keyframes dash {
+    0% {
+      stroke-dasharray: 0 0 0 360 0 360;
+    }
+  
+    50% {
+      stroke-dasharray: 0 0 360 0 360 0;
+    }
+  
+    100% {
+      stroke-dasharray: 0 360 0 360 0 360;
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      stroke-dashoffset: 0;
+    }
+  
+    100% {
+      stroke-dashoffset: 360;
+    }
+  }
+  
