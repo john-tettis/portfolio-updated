@@ -8,16 +8,6 @@ import SectionHeader from './Utils/SectionHeader';
 
 const projects = [
     {
-        title:"Raspberry PI Video Server",
-        link:"https://github.com/john-tettis/RaspberryPi-remote-video-server",
-        description:`Remote video server run on a Raspberry PI. 
-        Receives Youtube video link from user's device, runs selenium, starts projector, and displays said 
-        video over the projector. Features include favorited youtube videos, audio control, and more!
-        `,
-        imgUrl:raspberryPI,
-        skills:["Flask", "Selenium","Static Web Serving","SQL", "Data Analytics"]
-    },
-    {
         title:"Data Annotation Chrome Extension",
         link:"https://chromewebstore.google.com/detail/dat-extension/olnfeojadebhopefbogmjdpekifcdmkp",
         repo:"",
@@ -28,7 +18,18 @@ const projects = [
         `,
         imgUrl:dat,
         skills:["JavaScript", "HTML","Chrome API"]
+    },
+    {
+        title:"Raspberry PI Video Server",
+        link:"https://github.com/john-tettis/RaspberryPi-remote-video-server",
+        description:`Remote video server run on a Raspberry PI. 
+        Receives Youtube video link from user's device, runs selenium, starts projector, and displays said 
+        video over the projector. Features include favorited youtube videos, audio control, and more!
+        `,
+        imgUrl:raspberryPI,
+        skills:["Flask", "Selenium","Static Web Serving","SQL", "Data Analytics"]
     }
+    
 ]
 const Projects =  forwardRef((props,ref)=>{
 

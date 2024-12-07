@@ -9,20 +9,22 @@ const About= forwardRef((props,ref)=>{
     <section ref={ref} id="about" className='description'>
          <SectionHeader>About</SectionHeader>
         <p className="about-paragraph">
-            Combining my background in software engineering with a strong marketing focus, I excel at creating solutions that 
-            connect technical advancements with business goals. While at Renewal by Andersen, I built a comprehensive metric 
-            analysis system that automated performance tracking across various platforms. This project not only improved 
-            operational efficiency but also provided valuable insights, allowing the marketing team to optimize campaigns 
-            and boost ROI. My technical skills include Python, JavaScript, Flask, and React, enabling me to handle 
-            full-stack development projects effectively and at scale.
+            Combining my background in marketing with my passion for software and technology, 
+            I excel at creating solutions tailored 
+            to meet the business needs of any company with a marketing focus. Which happens to be most of them. Yay!
+            My designs grab attention, direct decisions, and create a warm, intuitive and, 
+            (if I can help it) <i>fun</i> experience for users.
         </p>
 
         <p className="about-paragraph">
-            With my marketing foundation, I approach software design from a user-centered angle, ensuring that solutions 
-            meet both technical specifications and user expectations. In my free time, I express my creativity through music 
-            production, hiking, and traveling—activities that inspire new ideas and innovative solutions. I look forward to 
-            joining a team where I can apply my combined skills to make a meaningful impact and continue my growth as a 
-            software engineer.
+            I am self taught - learning most of what I know today from diving headfirst into projects. At first as a hobby - 
+            creating gizmos for my own personal amusemen ( see projects) -  and then gradually, by creating 
+            products that do more than turn my lights on or water my plants. Products that serve <i>real</i> businesses, 
+            with <i>real</i> needs.  
+        </p>
+        <p className="about-paragraph">
+            When I am not hunched over my computer trying to find that god forsaken bug that has broken my whole applicatoin,
+            I am usually creating music, learning a new trade or skill, or taking a hike with definetly not enough water (its never enough).
         </p>
     </section>
         
