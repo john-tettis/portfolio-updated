@@ -1,17 +1,31 @@
 import MobileNav from './Components/MobileNav';
-import { useEffect, useRef } from 'react';
+import { useEffect, useState,useRef } from 'react';
 import './styles/App.css';
 import DynamicBackground from './Components/DynamicBackground';
 import BodyContent from './Components/BodyContent'
 import debounce from 'lodash/debounce';
+import Logo from './Components/Utils/Logo'
 
 function App() {
+  //scrollbar reference for scrolling only the column adn not the body
   const scrollableSectionRef = useRef(null);
+  //navbar references to allow navbar to function across app
   const navRefs ={
     about: useRef(null),
     experience: useRef(null),
     projects: useRef(null)
-}
+  }
+
+  //loading functionality
+  const [loading, setLoading] = useState(true);
+
+  // useEffect(() => {
+  //   // Simulate fetching data
+  //   setTimeout(() => {
+      
+  //     setLoading(false);
+  //   }, 2000); 
+  // }, []);
 
 
 
@@ -29,14 +43,21 @@ useEffect(() => {
   };
 }, []);
 
+
+
+
   return (
     <div className="App">
-      <MobileNav navRefs={navRefs}/>
-      <DynamicBackground/>
-      <BodyContent
-      scrollRef = {scrollableSectionRef}
-      navRefs={navRefs}
-      />
+      { loading ? (<Logo/>) :
+      (<>
+        <MobileNav navRefs={navRefs}/>
+        <DynamicBackground/>
+        <BodyContent
+        scrollRef = {scrollableSectionRef}
+        navRefs={navRefs}
+        />
+      </>)
+      }
     </div>
   );
 }
