@@ -4,7 +4,7 @@ import './styles/App.css';
 import DynamicBackground from './Components/DynamicBackground';
 import BodyContent from './Components/BodyContent'
 import debounce from 'lodash/debounce';
-import Logo from './Components/Utils/Logo'
+import LoadingScreen from './Components/Utils/LoadingScreen';
 
 function App() {
   //scrollbar reference for scrolling only the column adn not the body
@@ -19,13 +19,13 @@ function App() {
   //loading functionality
   const [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   // Simulate fetching data
-  //   setTimeout(() => {
+  useEffect(() => {
+    // Simulate fetching data
+    setTimeout(() => {
       
-  //     setLoading(false);
-  //   }, 2000); 
-  // }, []);
+      setLoading(false);
+    }, 3000); 
+  }, []);
 
 
 
@@ -48,16 +48,15 @@ useEffect(() => {
 
   return (
     <div className="App">
-      { loading ? (<Logo/>) :
-      (<>
+        <LoadingScreen
+        loading={loading}
+        />
         <MobileNav navRefs={navRefs}/>
         <DynamicBackground/>
         <BodyContent
         scrollRef = {scrollableSectionRef}
         navRefs={navRefs}
         />
-      </>)
-      }
     </div>
   );
 }
