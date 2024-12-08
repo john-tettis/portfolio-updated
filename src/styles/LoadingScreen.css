@@ -13,6 +13,10 @@
     align-items:center;
     justify-content:center;
     z-index: 9999;
+    padding-bottom: 30px ;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow-y: hidden;
     
 }
 .move-up{
@@ -23,12 +27,9 @@
       transform: translateY(0);
       opacity: 1;
     }
-    99%{
-        transform: translateY(-100vh);
-        opacity:1
-    }
     100% {
       visibility: hidden;
+      transform: translateY(-100vh);
       opacity: 0;
     }
   }
