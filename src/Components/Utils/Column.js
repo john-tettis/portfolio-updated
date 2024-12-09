@@ -1,4 +1,3 @@
-import Bio from '../Bio';
 import React, { useEffect, useRef } from 'react';
 import '../../styles/Column.css'
 
