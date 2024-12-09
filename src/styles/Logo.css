@@ -1,12 +1,20 @@
 @import url('Color.css');
 
-.logo {
+#logo-content path{
     animation:
-      dash 1.5s ease-in-out 2,
-      spin 1.5s ease-in-out 2;
-    stroke-width: 100px;
+      dash 2s ease-in-out infinite,
+      spin 2s ease-in-out infinite;
+    stroke-width: 130px;
+  }
+  #logo{
+    height:15rem;
+    transform: scale(3);
+    /* width: 60rem; */
     
   }
+
+
+
 
   #logo-content > :nth-child(1),
   #logo-content > :nth-child(3),
@@ -27,29 +35,59 @@
     stroke: var(--color-3)
   }
   
-  
 
-  @keyframes dash {
-    0% {
-      stroke-dasharray: 0 0 0 360 0 360;
-    }
-  
-    50% {
-      stroke-dasharray: 0 0 360 0 360 0;
-    }
-  
-    100% {
-      stroke-dasharray: 0 360 0 360 0 360;
-    }
+@keyframes dash {
+  0% {
+    stroke-dasharray: 0 0 0 360 0 360;
   }
-  
-  @keyframes spin {
+
+  50% {
+    stroke-dasharray: 0 0 360 0 360 0;
+  }
+
+  100% {
+    stroke-dasharray: 0 360 0 360 0 360;
+    }
+}
+
+ @keyframes spin {
     0% {
       stroke-dashoffset: 0;
     }
   
-    100% {
-      stroke-dashoffset: 360;
+    50% {
+      stroke-dashoffset: 360
     }
+    100% {
+      stroke-dashoffset: 0
+    }
+} 
+  
+@media  screen and (max-width:1300px) {
+  #logo{
+    height:10rem;
+    transform: scale(3);
+    /* width: 60rem; */
+    
   }
+}
+@media  screen and (max-width:843px) {
+  #logo{
+    height:5rem;
+    transform: scale(3);
+    /* width: 60rem; */
+    
+  }
+}
+@media  screen and (max-width:430px) {
+  #logo{
+    height:4rem;
+    transform: scale(3);
+    /* width: 60rem; */
+    
+  }
+}
+
+
+
   
