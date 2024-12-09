@@ -1,5 +1,4 @@
-@import url('Color.css');
-
+@import url('../Utils/Color.css');
 
 
 /* Scrollbar styling (WebKit-based browsers) */
@@ -28,6 +27,7 @@
   color:white;
   scrollbar-color: rgb(169, 146, 116) var(--color-2);
   scrollbar-width: thin;
+  opacity:0;
 }
 @media  screen and (min-width:1200px) {
     .scroll-section{
@@ -46,6 +46,3 @@
     }
 }
 
-.fade-in {
-    animation:fadeIn 2s ease-in forwards;
-}

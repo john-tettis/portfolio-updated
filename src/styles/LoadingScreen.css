@@ -1,4 +1,4 @@
-@import url('Color.css');
+@import url('../Utils/Color.css');
 .loading-screen{
     position:fixed;
     margin:0;
@@ -19,17 +19,3 @@
     overflow-y: hidden;
     
 }
-.move-up{
-    animation: moveUp 1.5s ease-in forwards;
-}
-@keyframes moveUp {
-    0% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-    100% {
-      visibility: hidden;
-      transform: translateY(-100vh);
-      opacity: 0;
-    }
-  }
