@@ -1,5 +1,8 @@
-@import url('Color.css');
+@import url('../Utils/Color.css');
+:root{
 
+    --delay:1s
+}
 .bio{
     position: relative;
     color:white;
@@ -61,38 +64,6 @@
     max-width:80%;
    
 }
-
-
-/* animation classes */
-
-@keyframes slideIn {
-    from {
-      right: 110%;
-    }
-    to {
-      right: 0;
-    }
-  }
-
-.slide-in{
-    right:110%
-}
-.slide-in.one {
-position: relative; /* Ensure the element is positioned relatively to its parent */
-animation: slideIn .8s ease forwards;
-}
-.slide-in.two {
-    position: relative; /* Ensure the element is positioned relatively to its parent */
-    animation: slideIn .5s ease forwards;
-    animation-delay: .2s;
-}
-.slide-in.three {
-    position: relative; /* Ensure the element is positioned relatively to its parent */
-    animation: slideIn 1s ease forwards;
-    animation-delay: .3s;
-}
-
-
 @media  screen and (max-width:1199px) {
     .name{
         font-size:3.8rem
