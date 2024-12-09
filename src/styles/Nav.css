@@ -1,4 +1,4 @@
-@import url('Color.css');
+@import url('../Utils/Color.css');
 .nav{
   margin-top:3rem;
   display: flex;
