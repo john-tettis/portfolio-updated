@@ -1,8 +1,4 @@
-@import url('../Utils/Color.css');
-:root{
-
-    --delay:1s
-}
+@import url('/Utils/Color.css');
 .bio{
     position: relative;
     color:white;
