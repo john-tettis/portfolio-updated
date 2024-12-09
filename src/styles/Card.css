@@ -1,4 +1,4 @@
-@import url('../Utils/Color.css');
+@import url('./Utils/Color.css');
 .card{
     display:flex;
     flex-direction:column;
