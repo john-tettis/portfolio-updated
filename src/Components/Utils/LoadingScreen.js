@@ -1,6 +1,7 @@
 import Logo from './Logo';
 import React, { useEffect, useRef } from 'react';
 import '../../styles/LoadingScreen.css'
+import '../styles/Utils/Animations.css'
 
 const LoadingScreen= ({loading})=>{
 
