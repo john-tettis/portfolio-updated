@@ -55,6 +55,7 @@ useEffect(() => {
         <DynamicBackground/>
         <BodyContent
         scrollRef = {scrollableSectionRef}
+        loading={loading}
         navRefs={navRefs}
         />
     </div>

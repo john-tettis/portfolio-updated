@@ -5,17 +5,17 @@ import '../styles/BodyContent.css'
 import Nav from './Nav';
 import ScrollSection from './ScrollSection';
 
-const BodyContent= ({scrollRef,navRefs})=>{
+const BodyContent= ({scrollRef,navRefs, loading})=>{
     
     return(
     <div className='body-content'>
         <Column left={true}>
-            <Bio />
+            <Bio loading={loading} />
             <Nav
             navRefs={navRefs}
             />
         </Column>
-        <Column><ScrollSection navRefs={navRefs} ref={scrollRef}/></Column>
+        <Column><ScrollSection loading={loading} navRefs={navRefs} ref={scrollRef}/></Column>
 
         
     </div>
