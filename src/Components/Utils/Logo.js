@@ -1,77 +1,83 @@
 import '../../styles/Logo.css'
-
-
 import React from "react";
 
-const Logo = () => (
+
+// MUCH PROPS To this svg to react component converter => https://react-svgr.com/playground/
+
+
+const Logo = (props) => (
   <svg
-    width="210mm"
-    height="56mm"
-    viewBox="0 0 210 56"
-    version="1.1"
-    id="svg1"
+    id="logo"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
+    // width="360mm"
+    // height="168mm"
+    viewBox="-30 -5 210 56"
   >
-    <defs>
-      <rect x="103.25089" y="29.039314" width="535.61402" height="116.15726" id="rect2" />
-      <rect x="75.290955" y="173.39735" width="574.9491" height="269.2222" id="rect1" />
-    </defs>
-    <g className='logo' id="layer1">
-      <g 
-        style={{
-          fill: "none",
-          strokeLinecap: "round",
-          strokeLinejoin: "round",
-        }}
-        transform="scale(0.264583, 0.264583)"
-      >
-        <g id="logo-content" transform="translate(103.25, 90.9338)">
-          <path
-            d="M 118 700 h 540 v -350 q 0 -95 -47 -175.5 t -127.5 -127.5 t -175.5 -47 h -291 v 182 h 291 q 70 0 119 49 t 49 119 v 168 h -358 v 182 z"
-            transform="scale(0.064, -0.064)"
-          />
-          <path
-            d="M 747 71 q -44 -43 -99 -57 t -129 -14 q -14 0 -43 1 h -46 q -50 0 -77 1 t -76 7.5 t -77.5 19 t -65.5 38 t -57 62 t -34.5 93 t -14.5 129.5 q 0 227 137 306 q 22 12 48.5 21 t 49 13.5 t 56 6.5 t 53.5 2.5 t 58 0.5 q 50 0 77 -1 t 76 -7.5 t 77.5 -19 t 65.5 -38 t 57 -62 t 34.5 -93 t 14.5 -129.5 q 0 -196 -85 -280 z M 651 351 q 0 37 -4 62.5 t -8 44.5 t -19.5 30 t -26.5 18 t -42 9.5 t -52 3 t -69 0.5 q -47 0 -71.5 -0.5 t -55.5 -5 t -48 -14.5 q -45 -26 -45 -148 q 0 -29 2 -50 t 4.5 -38.5 t 11.5 -29.5 t 14.5 -21 t 23 -14.5 t 28 -8.5 t 37.5 -4.5 t 44 -1.5 h 55 q 17 0 49 -1 h 59 t 49.5 4.5 t 31.5 13.5 q 32 31 32 151 z"
-            transform="matrix(0.064 0 0 -0.064 44.992 0)"
-          />
-          <path
-            d="M 632 0 v 257 h -390 v -257 h -182 v 700 h 182 v -282 h 390 v 282 h 182 v -700 h -182 z"
-            transform="matrix(0.064 0 0 -0.064 100.096 0)"
-          />
-          <path
-            d="M 414 700 q 101 0 186.5 -50 t 135.5 -135.5 t 50 -186.5 v -328 h -182 v 328 q 0 79 -55.5 134.5 t -134.5 55.5 t -134.5 -55.5 t -55.5 -134.5 v -328 h -182 v 328 q 0 76 29.5 144.5 t 79.5 118.5 t 118.5 79.5 t 144.5 29.5 z"
-            transform="matrix(0.064 0 0 -0.064 156.032 0)"
-          />
-          <path
-            d="M 719 700 v -182 h -263 v -518 h -182 v 518 h -262 v 182 h 707 z"
-            transform="matrix(0.064 0 0 -0.064 235.328 0)"
-          />
-          <path
-            d="M 378 518 q -47 0 -86.5 -23.5 t -61.5 -63.5 h 482 v -162 h -482 q 15 -26 37 -45.5 t 51 -30.5 t 60 -11 h 392 v -182 h -392 q -95 0 -175.5 47 t -127.5 127.5 t -47 175.5 t 47 175.5 t 127.5 127.5 t 175.5 47 h 392 v -182 h -392 z"
-            transform="matrix(0.064 0 0 -0.064 282.112 0)"
-          />
-          <path
-            d="M 712 518 h -262 v -210 q 0 -34 16.5 -63 t 46 -46 t 63.5 -17 h 136 v -182 h -136 q -128 0 -218 90.5 t -90 217.5 v 210 h -256 v 182 h 700 v -182 z"
-            transform="matrix(0.064 0 0 -0.064 334.208 0)"
-          />
-          <path
-            d="M 712 518 h -262 v -210 q 0 -34 16.5 -63 t 46 -46 t 63.5 -17 h 136 v -182 h -136 q -128 0 -218 90.5 t -90 217.5 v 210 h -256 v 182 h 700 v -182 z"
-            transform="matrix(0.064 0 0 -0.064 382.208 0)"
-          />
-          <path
-            d="M 242 0 h -182 v 700 h 182 v -700 z"
-            transform="matrix(0.064 0 0 -0.064 430.208 0)"
-          />
-          <path
-            d="M 594 431 q 58 0 107.5 -29 t 78.5 -78.5 t 29 -108.5 q 0 -89 -63 -152 t -152 -63 h -527 v 182 h 517 q 18 0 30.5 12.5 t 12.5 31 t -12.5 31 t -30.5 12.5 h -335 q -89 0 -152 63 t -63 152.5 t 63 152.5 t 152 63 h 527 v -182 h -517 q -18 0 -30.5 -12.5 t -12.5 -31 t 12.5 -31 t 30.5 -12.5 h 335 z"
-            transform="matrix(0.064 0 0 -0.064 449.536 0)"
-          />
-        </g>
-      </g>
+    <g
+      id="logo-content"
+      style={{
+        fill: "none",
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      }}
+    >
+      <path
+        d="M472 662V158l-31-95-31-31.5L346 0h-62l-64 31.5L189 63l-31 95v62"
+        pathLength="360"
+        transform="matrix(.01693 0 0 -.01693 27.318 24.06)"
+      />
+      <path
+        d="m346 441-62-31-64-64-31-94v-63l31-94.5 64-63L346 0h95l63 31.5 63 63 31 94.5v63l-31 94-63 64-63 31h-95"
+        pathLength="360"
+        transform="matrix(.017 0 0 -.017 35.853 24.06)"
+      />
+      <path
+        d="M220 662V0m0 315 95 95 63 31h94l64-31 31-95V0"
+        pathLength="360"
+        transform="matrix(.017 0 0 -.017 45.979 24.06)"
+      />
+      <path
+        d="M220 441V0m0 315 95 95 63 31h94l64-31 31-95V0"
+        pathLength="360"
+        transform="matrix(.017 0 0 -.017 56.105 24.06)"
+      />
+      <path
+        d="M346 662V0M126 662h441"
+        pathLength="360"
+        transform="matrix(.017 0 0 -.017 72.632 24.06)"
+      />
+      <path
+        d="M189 252h378v63l-31 63-32 32-63 31h-95l-62-31-64-64-31-94v-63l31-94.5 64-63L346 0h95l63 31.5 63 63"
+        pathLength="360"
+        transform="matrix(.017 0 0 -.017 81.166 24.06)"
+      />
+      <path
+        d="M252 662V126l32-94.5L346 0h64M158 441h220"
+        pathLength="360"
+        transform="matrix(.017 0 0 -.017 90.767 24.06)"
+      />
+      <path
+        d="M252 662V126l32-94.5L346 0h64M158 441h220"
+        pathLength="360"
+        transform="matrix(.017 0 0 -.017 97.168 24.06)"
+      />
+      <path
+        d="m189 662 31-32 32 32-32 31-31-31m31-221V0"
+        pathLength="360"
+        transform="matrix(.017 0 0 -.017 103.569 24.06)"
+      />
+      <path
+        d="m536 346-32 64-94 31h-95l-95-31-31-64 31-62 64-32 157-32 63-31 32-63V94.5l-32-63L410 0h-95l-95 31.5-31 63"
+        pathLength="360"
+        transform="matrix(.017 0 0 -.017 107.836 24.06)"
+      />
     </g>
   </svg>
-);
+)
+
+
+
 
 export default Logo;
 
