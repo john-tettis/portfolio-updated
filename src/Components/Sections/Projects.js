@@ -1,9 +1,9 @@
 
 import React, {forwardRef} from 'react';
-import ProjectCard from './Utils/ProjectCard'
-import raspberryPI from '../Assets/Images/raspberry-pi.png'
-import dat from '../Assets/Images/DAT.jpg'
-import SectionHeader from './Utils/SectionHeader';
+import ProjectCard from '../Utils/ProjectCard'
+import raspberryPI from '../../Assets/Images/raspberry-pi.png'
+import dat from '../../Assets/Images/DAT.jpg'
+import SectionHeader from '../Utils/SectionHeader';
 
 
 const projects = [

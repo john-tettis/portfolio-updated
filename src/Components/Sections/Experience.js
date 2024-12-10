@@ -1,8 +1,8 @@
 
 import React, { forwardRef } from 'react';
-import WorkCard from './Utils/WorkCard'
-import '../styles/Experience.css'
-import SectionHeader from './Utils/SectionHeader';
+import WorkCard from '../Utils/WorkCard'
+import '../../styles/Experience.css'
+import SectionHeader from '../Utils/SectionHeader';
 
 
 const history = [

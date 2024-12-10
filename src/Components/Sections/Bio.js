@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/Bio.css'
-import '../styles/Utils/Animations.css'
+import '../../styles/Bio.css'
+import '../../styles/Utils/Animations.css'
 
 const Bio = ({loading})=>{
 
@@ -11,7 +11,7 @@ const Bio = ({loading})=>{
             <h3 className={'title ' + (loading ? '': ' slide-in one')}>Back End Engineer</h3>
             <div>
             <p className={'desc ' + (loading ? '': ' slide-in two')}> I build scalable and elegant solutions for data driven businesses. </p>
-                <div className={'name ' + (loading ? '': ' slide-in three')}>
+                <div className={'desc-container ' + (loading ? '': ' slide-in three')}>
                     <div className='sub-desc'>
                         <p>
                            Builds efficient and streamlined solutions. 

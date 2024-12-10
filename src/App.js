@@ -20,7 +20,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate fetching data
+
     setTimeout(() => {
       
       setLoading(false);
@@ -51,7 +51,7 @@ useEffect(() => {
         <LoadingScreen
         loading={loading}
         />
-        <MobileNav navRefs={navRefs}/>
+        {/* <MobileNav navRefs={navRefs}/> */}
         <DynamicBackground/>
         <BodyContent
         scrollRef = {scrollableSectionRef}

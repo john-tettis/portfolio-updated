@@ -6,6 +6,7 @@ const useSectionObserver = () => {
   const handleIntersection = useCallback(
     (entries) => {
       entries.forEach((entry) => {
+        console.log(entry.intersectionRatio)
         if (entry.isIntersecting) {
           setActiveSection(entry.target.id); // Set active section
         }

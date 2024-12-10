@@ -1,6 +1,6 @@
 import React, { forwardRef} from 'react';
-import SectionHeader from './Utils/SectionHeader';
-import '../styles/About.css'
+import SectionHeader from '../Utils/SectionHeader';
+import '../../styles/About.css'
  
 const About= forwardRef((props,ref)=>{
 
