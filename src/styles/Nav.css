@@ -58,6 +58,7 @@
     position: absolute;
     background: var(--color-2a);
     backdrop-filter: blur(10px);
+    transition:left .5s ease;
     /* right:-100%; */
   }
   .nav.active{
