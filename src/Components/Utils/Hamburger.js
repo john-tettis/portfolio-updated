@@ -6,10 +6,10 @@ const Hamburger= ({id})=>{
     return(
         <>
             <input type="checkbox" id="hamburger"/>
-            <label for="checkbox" class="toggle">
-                <div class="bars" id="bar1"></div>
-                <div class="bars" id="bar2"></div>
-                <div class="bars" id="bar3"></div>
+            <label htmlFor="hamburger" className="toggle">
+                <div className="bars" id="bar1"></div>
+                <div className="bars" id="bar2"></div>
+                <div className="bars" id="bar3"></div>
             </label>
         </>
     )
