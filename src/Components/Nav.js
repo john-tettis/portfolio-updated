@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import '../styles/Nav.css'
 import useSectionObserver from './hooks/useSectionObserver';
+import Hamburger from './Utils/Hamburger';
 const Nav = ({navRefs})=>{
     const {about,experience,projects} = navRefs
     const activeSection = useSectionObserver();
@@ -19,11 +20,16 @@ const Nav = ({navRefs})=>{
     
 
     return(
+    <div className='nav-container'>
         <div className="nav desktop fade-in">
             <li> <a className={activeSection == "about" ? "active" : ""}onClick={()=>scrollTo(about)}>About</a></li>
             <li> <a className={activeSection == "experience" ? "active" : ""}onClick={()=>scrollTo(experience)}>Experience</a></li>
             <li> <a className={activeSection == "projects" ? "active" : ""}onClick={()=>scrollTo(projects)}>Projects</a></li>
         </div>
+        <Hamburger></Hamburger>
+
+    </div>
+        
     )
 
 }
