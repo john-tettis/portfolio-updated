@@ -1,4 +1,4 @@
-import Bio from '../Bio';
+import Bio from '../Sections/Bio';
 import React, { useEffect, useRef } from 'react';
 import '../../styles/SectionHeader.css'
 

@@ -1,7 +1,7 @@
 import React, { forwardRef, useEffect, useRef } from 'react';
-import About from './About';
-import Experience from './Experience';
-import Projects from './Projects';
+import About from './Sections/About';
+import Experience from './Sections/Experience';
+import Projects from './Sections/Projects';
 import '../styles/ScrollSection.css'
 import '../styles/Utils/Animations.css'
  

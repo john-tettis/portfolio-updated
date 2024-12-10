@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import Bio from './Bio';
+import Bio from './Sections/Bio';
 import Column from './Utils/Column';
 import '../styles/BodyContent.css'
 import Nav from './Nav';

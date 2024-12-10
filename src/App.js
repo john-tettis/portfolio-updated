@@ -20,7 +20,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate fetching data
+    
     setTimeout(() => {
       
       setLoading(false);

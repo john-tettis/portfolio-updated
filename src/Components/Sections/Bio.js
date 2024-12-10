@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/Bio.css'
-import '../styles/Utils/Animations.css'
+import '../../styles/Bio.css'
+import '../../styles/Utils/Animations.css'
 
 const Bio = ({loading})=>{
 
