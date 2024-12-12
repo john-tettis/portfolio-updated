@@ -6,7 +6,7 @@ import Hamburger from './Utils/Hamburger';
 
 
 
-const Nav = ({navRefs, scrollRef})=>{
+const Nav = ({navRefs, loading})=>{
     const [menu, setMenu] = useState(false)
 
     const toggleMenu = ()=>{
@@ -17,11 +17,12 @@ const Nav = ({navRefs, scrollRef})=>{
     const activeSection = useSectionObserver();
 //simple scroll function to compute where to send scrollRef to
    const scrollTo = (ref, offset = 80) => {
+    //check to  make sure the ref is assigned
     if (ref?.current) {
-        //basically, if we are at mobile _> scroll the document
-        const scrollElement = window.matchMedia('(min-width: 1200px)').matches ? scrollRef.current: window;
+        //element top is the top of the rectangle plus the current scroll position
         const elementTop = ref.current.getBoundingClientRect().top + window.scrollY;
-        scrollElement.scrollTo({
+        //scroll to element. fine tune offset as needed
+        window.scrollTo({
             top: elementTop - offset,
             behavior: "smooth",
         });
@@ -40,12 +41,12 @@ const Nav = ({navRefs, scrollRef})=>{
 
     return(
     <div className='nav-container'>
-        <div className={`nav desktop fade-in ${menu ? 'active':''}`}>
+        <div className={`nav desktop ${menu ? 'active':''} ${loading ? '':' fade-in'}`}>
             <li> <a className={activeSection == "about" ? "active" : ""}onClick={()=>handleNavigation(about, 80)}>About</a></li>
             <li> <a className={activeSection == "experience" ? "active" : ""}onClick={()=>handleNavigation(experience,80)}>Experience</a></li>
             <li> <a className={activeSection == "projects" ? "active" : ""}onClick={()=>handleNavigation(projects,0)}>Projects</a></li>
         </div>
-        <Hamburger toggleMenu={toggleMenu}/>
+        <Hamburger menu={menu} toggleMenu={toggleMenu}/>
 
     </div>
         

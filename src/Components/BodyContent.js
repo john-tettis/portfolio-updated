@@ -12,6 +12,7 @@ const BodyContent= ({scrollRef,navRefs, loading})=>{
         <Column left={true}>
             <Bio loading={loading} />
             <Nav
+            loading={loading}
             navRefs={navRefs}
             scrollRef={scrollRef}
             />
