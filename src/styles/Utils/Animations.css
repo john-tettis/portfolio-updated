@@ -1,59 +1,68 @@
 
 :root{
 
-    --delay:1s
+    --delay:4s
 }
 
-
-
-
 .fade-in {
-    animation:fadeIn 2s ease-in .7s forwards;
+  opacity:0;
+  
+  animation:fadeIn 2s ease-in forwards;
+  animation-delay:var(--delay);
 }
 
 /* Primariily for the loading screen */
 .move-up{
     animation: moveUp 1.5s ease-in forwards;
 }
-@keyframes moveUp {
-    0% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-    100% {
-      visibility: hidden;
-      transform: translateY(-100vh);
-      opacity: 0;
-    }
-  }
+
 
   /* for the bio but ccan be used anywhere! */
   /* animation classes */
 
-@keyframes slideIn {
-    from {
-      right: 110%;
-    }
-    to {
-      right: 0;
-    }
-  }
-
-.slide-in{
-    right:110%
-}
 .slide-in.one {
-position: relative; /* Ensure the element is positioned relatively to its parent */
-animation: slideIn 1s ease forwards;
-animation-delay:var(--delay);
+  right:110%;
+  position: relative; /* Ensure the element is positioned relatively to its parent */
+  animation: slideIn 1s ease forwards;
+  animation-delay:var(--delay);
 }
 .slide-in.two {
+    right:110%;
     position: relative; /* Ensure the element is positioned relatively to its parent */
     animation: slideIn 1s ease forwards;
     animation-delay: calc(var(--delay) + .2s)
 }
 .slide-in.three {
+    right:110%;
     position: relative; /* Ensure the element is positioned relatively to its parent */
     animation: slideIn 1s ease forwards;
     animation-delay: calc(var(--delay) + .3s)
 }
+@keyframes slideIn {
+  from {
+    right: 110%;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes fadeIn{
+  from{
+      opacity:0;
+  }
+  to{
+      opacity:1;
+  }
+}
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
