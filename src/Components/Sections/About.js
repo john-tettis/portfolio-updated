@@ -1,9 +1,10 @@
 import React, { forwardRef} from 'react';
 import SectionHeader from '../Utils/SectionHeader';
+import useScrollTo from '../hooks/useScrollTo';
 import '../../styles/About.css'
  
-const About= forwardRef((props,ref)=>{
-
+const About= forwardRef(({projectRef},ref)=>{
+    const scrollTo = useScrollTo()
 
     return(
     <section ref={ref} id="about" className='description section'>
@@ -18,7 +19,7 @@ const About= forwardRef((props,ref)=>{
 
         <p className="about-paragraph">
             I am self taught - learning most of what I know today from diving headfirst into projects. At first as a hobby - 
-            creating gizmos for my own personal amusemen ( see projects) -  and then gradually, by creating 
+            creating gizmos for my own personal amusement <a onClick={()=>scrollTo(projectRef)}>(See Projects)</a> -  and then gradually, by creating 
             products that do more than turn my lights on or water my plants. Products that serve <i>real</i> businesses, 
             with <i>real</i> needs.  
         </p>
