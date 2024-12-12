@@ -8,8 +8,32 @@ body {
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  scrollbar-color: rgb(169, 146, 116) var(--color-2);
+  scrollbar-width: thin;
   overflow-x:hidden;
 }
+
+/* Scrollbar styling (WebKit-based browsers) */
+.body::-webkit-scrollbar {
+  width: 12px; /* Scrollbar width */
+  background:var(--color-2);
+}
+
+.body::-webkit-scrollbar-track {
+  
+  border-radius: 6px;
+}
+
+.body::-webkit-scrollbar-thumb {
+  background: rgb(169, 146, 116); /* Thumb color */
+  border-radius: 50%;
+}
+
+.body::-webkit-scrollbar-thumb:hover {
+  background: #ffff; /* Thumb hover color */
+}
+
+
 section{
   scroll-snap-align: center;
   scroll-snap-stop: always;

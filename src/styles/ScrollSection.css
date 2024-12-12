@@ -1,26 +1,6 @@
 @import url('./Utils/Color.css');
 
 
-/* Scrollbar styling (WebKit-based browsers) */
-.scroll-section::-webkit-scrollbar {
-  width: 12px; /* Scrollbar width */
-  background:var(--color-2);
-}
-
-.scroll-section::-webkit-scrollbar-track {
-  
-  border-radius: 6px;
-}
-
-.scroll-section::-webkit-scrollbar-thumb {
-  background: rgb(169, 146, 116); /* Thumb color */
-  border-radius: 50%;
-}
-
-.scroll-section::-webkit-scrollbar-thumb:hover {
-  background: #ffff; /* Thumb hover color */
-}
-
 /* Non WebKit-based browsers */
 .scroll-section{
   display: flex;
@@ -28,8 +8,7 @@
   gap:4rem;
   text-align:left;
   color:white;
-  scrollbar-color: rgb(169, 146, 116) var(--color-2);
-  scrollbar-width: thin;
+  
   opacity:0;
 }
 
