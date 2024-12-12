@@ -10,7 +10,6 @@ const Nav = ({navRefs,})=>{
     const [menu, setMenu] = useState(false)
 
     const toggleMenu = ()=>{
-        console.log(!menu)
         setMenu(!menu)
     }
     const {about,experience,projects} = navRefs
