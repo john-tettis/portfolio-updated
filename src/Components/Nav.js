@@ -14,7 +14,8 @@ const Nav = ({navRefs,})=>{
         setMenu(!menu)
     }
     const {about,experience,projects} = navRefs
-    const activeSection = useSectionObserver();
+    // [id for active section, manually update active]
+    const [activeSection, manualUpdateActive] = useSectionObserver();
 //simple scroll function to compute where to send scrollRef to
    const scrollTo = (ref, offset = 80) => {
     //check to  make sure the ref is assigned
@@ -26,6 +27,7 @@ const Nav = ({navRefs,})=>{
             top: elementTop - offset,
             behavior: "smooth",
         });
+        manualUpdateActive(ref.current.id)
     } else {
         console.log("NO CURRENT REF");
     }
