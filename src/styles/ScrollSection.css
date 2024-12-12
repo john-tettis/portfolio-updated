@@ -23,6 +23,9 @@
 
 /* Non WebKit-based browsers */
 .scroll-section{
+  display: flex;
+  flex-direction: column;
+  gap:4rem;
   text-align:left;
   color:white;
   scrollbar-color: rgb(169, 146, 116) var(--color-2);
