@@ -6,7 +6,7 @@ const Hamburger= ({toggleMenu, menu})=>{
 
     return(
         <>
-            <input type="checkbox" checked ={menu}onClick={toggleMenu} id="hamburger"/>
+            <input type="checkbox" checked ={menu}onChange={toggleMenu} id="hamburger"/>
             <label htmlFor="hamburger" className="toggle">
                 <div className="bars" id="bar1"></div>
                 <div className="bars" id="bar2"></div>
