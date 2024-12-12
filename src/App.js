@@ -1,9 +1,7 @@
-import MobileNav from './Components/MobileNav';
 import { useEffect, useState,useRef } from 'react';
 import './styles/App.css';
 import DynamicBackground from './Components/DynamicBackground';
 import BodyContent from './Components/BodyContent'
-import debounce from 'lodash/debounce';
 import LoadingScreen from './Components/Utils/LoadingScreen';
 
 function App() {
@@ -18,7 +16,7 @@ function App() {
 
   //loading functionality
   const [loading, setLoading] = useState(true);
-
+//loading screen delay:)
   useEffect(() => {
 
     setTimeout(() => {
@@ -26,25 +24,6 @@ function App() {
       setLoading(false);
     }, 3000); 
   }, []);
-
-
-
-// useEffect(() => {
-//   const handleWheel = debounce((event) => {
-//     if (scrollableSectionRef.current && window.matchMedia('(min-width: 1200px)').matches) {
-//       scrollableSectionRef.current.scrollTop += event.deltaY; 
-//     }
-//   }, 16); // Throttle to ~60fps
-
-//   document.body.addEventListener('wheel', handleWheel);
-
-//   return () => {
-//     document.body.removeEventListener('wheel', handleWheel);
-//   };
-// }, []);
-
-
-
 
   return (
     <div className="App">
