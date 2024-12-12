@@ -48,10 +48,9 @@ function App() {
 
   return (
     <div className="App">
-        {/* <LoadingScreen
+        <LoadingScreen
         loading={loading}
-        /> */}
-        {/* <MobileNav navRefs={navRefs}/> */}
+        />
         <DynamicBackground/>
         <BodyContent
         scrollRef = {scrollableSectionRef}
