@@ -6,7 +6,7 @@ import Hamburger from './Utils/Hamburger';
 
 
 
-const Nav = ({navRefs, loading})=>{
+const Nav = ({navRefs,})=>{
     const [menu, setMenu] = useState(false)
 
     const toggleMenu = ()=>{
@@ -41,7 +41,7 @@ const Nav = ({navRefs, loading})=>{
 
     return(
     <div className='nav-container'>
-        <div className={`nav desktop ${menu ? 'active':''} ${loading ? '':' fade-in'}`}>
+        <div className={`nav desktop fade-in ${menu ? 'active':''}`}>
             <li> <a className={activeSection == "about" ? "active" : ""}onClick={()=>handleNavigation(about, 80)}>About</a></li>
             <li> <a className={activeSection == "experience" ? "active" : ""}onClick={()=>handleNavigation(experience,80)}>Experience</a></li>
             <li> <a className={activeSection == "projects" ? "active" : ""}onClick={()=>handleNavigation(projects,0)}>Projects</a></li>
