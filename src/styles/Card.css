@@ -75,8 +75,9 @@
 .card-image{
     margin-top:.67rem;
     margin-bottom:auto;
-    width:130px;
-    height:90px;
+    object-fit: cover;
+    width:160px;
+    height:100px;
     border-radius:5px;
 }
 .project-card{
@@ -112,6 +113,8 @@
     }
     .card-image{
         margin-right:.5rem;
+        width:200px;
+        height:100px;
     }
     
     
