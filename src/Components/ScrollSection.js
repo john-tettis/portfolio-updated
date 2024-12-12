@@ -5,7 +5,7 @@ import Projects from './Sections/Projects';
 import '../styles/ScrollSection.css'
 import '../styles/Utils/Animations.css'
  
-const ScrollSection= forwardRef(({navRefs,loading},ref)=>{
+const ScrollSection= forwardRef(({navRefs},ref)=>{
     const {about,experience,projects} = navRefs
     return(
     <div ref={ref}className={'scroll-section fade-in'}>
