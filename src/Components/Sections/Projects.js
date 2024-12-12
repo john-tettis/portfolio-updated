@@ -2,7 +2,7 @@
 import React, {forwardRef} from 'react';
 import ProjectCard from '../Utils/ProjectCard'
 import raspberryPI from '../../Assets/Images/raspberry-pi.png'
-import dat from '../../Assets/Images/DAT.jpg'
+import dat from '../../Assets/Images/DAT.png'
 import SectionHeader from '../Utils/SectionHeader';
 
 
