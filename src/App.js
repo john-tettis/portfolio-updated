@@ -29,28 +29,28 @@ function App() {
 
 
 
-useEffect(() => {
-  const handleWheel = debounce((event) => {
-    if (scrollableSectionRef.current && window.matchMedia('(min-width: 1200px)').matches) {
-      scrollableSectionRef.current.scrollTop += event.deltaY; 
-    }
-  }, 16); // Throttle to ~60fps
+// useEffect(() => {
+//   const handleWheel = debounce((event) => {
+//     if (scrollableSectionRef.current && window.matchMedia('(min-width: 1200px)').matches) {
+//       scrollableSectionRef.current.scrollTop += event.deltaY; 
+//     }
+//   }, 16); // Throttle to ~60fps
 
-  document.body.addEventListener('wheel', handleWheel);
+//   document.body.addEventListener('wheel', handleWheel);
 
-  return () => {
-    document.body.removeEventListener('wheel', handleWheel);
-  };
-}, []);
+//   return () => {
+//     document.body.removeEventListener('wheel', handleWheel);
+//   };
+// }, []);
 
 
 
 
   return (
     <div className="App">
-        <LoadingScreen
+        {/* <LoadingScreen
         loading={loading}
-        />
+        /> */}
         {/* <MobileNav navRefs={navRefs}/> */}
         <DynamicBackground/>
         <BodyContent
