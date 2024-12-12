@@ -3,33 +3,36 @@ import { useState, useEffect, useCallback } from 'react';
 const useSectionObserver = () => {
   const [activeSection, setActiveSection] = useState(null);
 
-  const handleIntersection = useCallback(
-    (entries) => {
-      entries.forEach((entry) => {
-        console.log(entry.intersectionRatio)
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id); // Set active section
-        }
-      });
-    },
-    []
-  );
+  const handleScroll = () => {
+    const sections = document.querySelectorAll('.section');
+    const scrollPosition = window.pageYOffset + window.innerHeight;
+    
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      console.log({section:section.id,
+        rect,
+        scrollPosition,
+        window:window.innerHeight
+      })
+      console.log()
+      console.log()
+      console.log()
+      // If the top of the section is within 20% of the viewport height
+      if (rect.bottom <= scrollPosition && rect.top >= 0 && rect.bottom <=window.innerHeight ) {
+        setActiveSection(section.id);
+      }
+    });
+  };
 
   useEffect(() => {
-    const sections = document.querySelectorAll('section');
-    const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.5, // Trigger when 50% of the section is in the viewport
-    });
-
-    sections.forEach((section) => observer.observe(section));
-
-    // Cleanup observer on component unmount
+    handleScroll()
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      observer.disconnect();
+      window.removeEventListener('scroll', handleScroll);
     };
-  }, [handleIntersection]);
+  }, []);
 
-  return activeSection;
+  return [activeSection,setActiveSection];
 };
 
-export default useSectionObserver;
+export default useSectionObserver
