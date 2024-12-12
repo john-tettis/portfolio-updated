@@ -9,7 +9,7 @@ const ScrollSection= forwardRef(({navRefs},ref)=>{
     const {about,experience,projects} = navRefs
     return(
     <div ref={ref}className={'scroll-section fade-in'}>
-        <About ref ={about}/>
+        <About projectRef={projects} ref ={about}/>
         <Experience ref={experience}/>
         <Projects ref={projects}/>
         
