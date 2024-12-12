@@ -6,7 +6,7 @@ const About= forwardRef((props,ref)=>{
 
 
     return(
-    <section ref={ref} id="about" className='description'>
+    <section ref={ref} id="about" className='description section'>
          <SectionHeader>About</SectionHeader>
         <p className="about-paragraph">
             Combining my background in marketing with my passion for software and technology, 

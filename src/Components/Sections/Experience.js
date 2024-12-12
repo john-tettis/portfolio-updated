@@ -42,7 +42,7 @@ const Experience= forwardRef((props,ref)=>{
 
 
     return(
-    <section id='experience' ref={ref}className='work-history'>
+    <section id='experience' ref={ref}className='work-history section'>
         <SectionHeader>Experience</SectionHeader>
         {history.map((job, index) => (
           <WorkCard 

@@ -5,7 +5,7 @@ const Bio = ()=>{
 
 
     return(
-        <div className='bio '>
+        <div className='bio'>
             <h1 className='name slide-in one'>John Tettis</h1>
             <h3 className='title slide-in one'>Back End Engineer</h3>
             <div>
