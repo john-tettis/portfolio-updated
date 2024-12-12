@@ -35,7 +35,7 @@ const Projects =  forwardRef((props,ref)=>{
 
 
     return(
-    <section ref={ref} id='projects'>
+    <section ref={ref} id='projects' className='section'>
         <SectionHeader>Projects</SectionHeader>
         {projects.map((p, index) => (
           <ProjectCard 
