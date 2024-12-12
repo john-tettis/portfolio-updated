@@ -29,14 +29,7 @@
   scrollbar-width: thin;
   opacity:0;
 }
-@media  screen and (min-width:1200px) {
-    .scroll-section{
-        max-height:40rem;
-        overflow-y: scroll;
-        scroll-behavior: smooth;
-    }
-    
-}
+
 @keyframes fadeIn{
     from{
         opacity:0;
