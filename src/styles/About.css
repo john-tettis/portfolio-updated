@@ -1,5 +1,4 @@
-
-
+@import url('./Utils/Color.css');
 
 .about-paragraph {
     color:white;
@@ -7,4 +6,11 @@
     line-height: 1.6;
     font-family: 'Roboto', sans-serif;
     margin:1rem;
+  }
+  .about-paragraph a{
+    color: var(--color-5)
+  }
+  .about-paragraph a:hover{
+    text-decoration: underline;
+    cursor:pointer;
   }
