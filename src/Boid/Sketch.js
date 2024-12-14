@@ -6,22 +6,18 @@ import p5 from 'p5'
 import Boid from './boid'
 const flock = [];
 
-let alignSlider, cohesionSlider, separationSlider;
-
 function setup(p,canvasRef) {
   const canvas = p.createCanvas(p.windowWidth, p.windowHeight);
 
   canvas.parent(canvasRef)
-  alignSlider = p.createSlider(0, 2, 1.5, 0.1);
-  cohesionSlider = p.createSlider(0, 2, 1, 0.1);
-  separationSlider = p.createSlider(0, 2, 2, 0.1);
-  for (let i = 0; i < 300; i++) {
+
+  for (let i = 0; i < 100; i++) {
     flock.push(new Boid(p));
   }
 }
 
 function draw(p) {
-  p.background(0);
+  p.background(p.color(12, 33, 47));
   for (let boid of flock) {
     boid.edges(p);
     boid.flock(p,flock);
