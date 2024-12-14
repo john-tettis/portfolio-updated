@@ -12,6 +12,9 @@ body {
   scrollbar-width: thin;
   overflow-x:hidden;
 }
+* {
+  user-select: none;
+}
 
 /* Scrollbar styling (WebKit-based browsers) */
 .body::-webkit-scrollbar {
