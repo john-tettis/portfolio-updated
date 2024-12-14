@@ -11,9 +11,11 @@ let mouseDuration = 0;
 let mouseReleased = false;
 let cluster = false;
 
+let image;
+
 function setup(p,canvasRef) {
   const canvas = p.createCanvas(p.windowWidth, p.windowHeight);
-
+  image = p.loadImage('/boid.png')
   canvas.parent(canvasRef)
 
   for (let i = 0; i < 100; i++) {
@@ -24,6 +26,7 @@ function setup(p,canvasRef) {
 function draw(p) {
   // console.log({mouseReleased, isMousePressed})
   let invert = true;
+  
   // 
   if (p.mouseIsPressed) {
     mouseDuration++;
@@ -32,7 +35,6 @@ function draw(p) {
     
   }
   p.background(p.color(12, 33, 47));
-
   for (let boid of flock) {
     if(mouseReleased === true){
       
@@ -42,7 +44,7 @@ function draw(p) {
     boid.edges(p);
     boid.flock(p,flock,cluster, invert);
     boid.update(p);
-    boid.show(p);
+    boid.show(p, image);
   }
   mouseReleased = false;
   
