@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Sketch from "../Boid/Sketch";
+import '../styles/DynamicBackground.css'
 import p5 from 'p5';
 
 const DynamicBackground = () => {
@@ -17,7 +18,7 @@ const DynamicBackground = () => {
     };
   }, []);
 
-  return <div className="dynamic-background" ref={canvasRef}></div>;
+  return <div id="dynamic-background" ref={canvasRef}></div>;
 };
 
 export default DynamicBackground;
