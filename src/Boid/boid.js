@@ -154,11 +154,24 @@ class Boid {
     this.acceleration.mult(0);
   }
 
-  show(p) {
-    p.strokeWeight(10);
-    p.stroke(this.color);
-    p.point(this.position.x, this.position.y);
-  }
+  show(p, image) {
+    p.push(); // Save the current drawing settings
+
+    // Move the origin to the boid's position
+    p.translate(this.position.x, this.position.y);
+
+    // Calculate the angle based on the velocity vector
+    let angle = p.atan2(this.velocity.x, this.velocity.y);
+    angle -= 90;
+    // Rotate the canvas by the calculated angle
+    p.rotate(angle);
+
+    // Draw the image, centered and scaled to the boid's size
+    p.image(image, -10, -20, 20, 40); // Offset by half of width (10) and height (12.5)
+
+    p.pop(); // Restore the drawing settings
+}
+
 }
 
 export default Boid;
