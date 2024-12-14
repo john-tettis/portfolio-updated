@@ -35,7 +35,7 @@
   .nav-container{
     display:flex;
    justify-content:end;
-    height: 4rem;
+    height: 3.5rem;
     position:fixed;
     top:0;
     right:0;
