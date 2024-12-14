@@ -19,16 +19,16 @@
         max-width:54rem;
         /* background-color: rgba(139, 118, 255, 0.3); */
         overflow-x: hidden;
-        margin-right: calc(50% - 39rem);
+        margin-left: calc(50% - 3rem);
     
     }
     
     .column-left{
         max-width:30rem;
         display:block;
-        margin-right:0;
+        margin-left:0;
         position: fixed;
-        left:calc(50% - 36rem);
+        left:calc(50% - 30rem);
     
     }
 }

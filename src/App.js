@@ -1,8 +1,11 @@
 import { useEffect, useState,useRef } from 'react';
 import './styles/App.css';
 import DynamicBackground from './Components/DynamicBackground';
-import BodyContent from './Components/BodyContent'
 import LoadingScreen from './Components/Utils/LoadingScreen';
+import Bio from './Components/Sections/Bio';
+import Column from './Components/Utils/Column';
+import Nav from './Components/Nav';
+import ScrollSection from './Components/ScrollSection';
 
 function App() {
   //scrollbar reference for scrolling only the column adn not the body
@@ -31,11 +34,20 @@ function App() {
         loading={loading}
         />
         <DynamicBackground/>
-        <BodyContent
+        <Column left={true}>
+            <Bio loading={loading} />
+            <Nav
+            loading={loading}
+            navRefs={navRefs}
+            scrollRef={scrollableSectionRef}
+            />
+        </Column>
+        <Column><ScrollSection loading={loading} navRefs={navRefs} ref={scrollableSectionRef}/></Column>
+        {/* <BodyContent
         scrollRef = {scrollableSectionRef}
         loading={loading}
         navRefs={navRefs}
-        />
+        /> */}
     </div>
   );
 }
