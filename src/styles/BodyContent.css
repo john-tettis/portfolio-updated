@@ -3,10 +3,7 @@
 .body-content{
     max-width:80rem;
     display: flex;
-    flex-direction: row;
-    gap:1rem;
-    background:rgba(12, 33, 47,.5);
-    border-radius:3px;
+ 
     padding:4px;
     margin-top:5rem;
     overflow-y: visible;
