@@ -13,8 +13,12 @@ class Boid {
     this.cohesionVal =1.3;
     this.separationVal = 1.2;
     this.mouseVal = 1.5
+    this.delay = 0;
   }
+  setDelay(int){
+    this.delay=int;
 
+  }
   edges(p) {
     if (this.position.x > p.width) {
       this.position.x = 0;
@@ -90,16 +94,16 @@ class Boid {
     }
     return steering;
   }
-  mouseAttraction(p) {
+  mouseAttraction(p, isMousePressed) {
     let mousePos = p.createVector(p.mouseX, p.mouseY); // Get mouse position
     let desired = p5.Vector.sub(mousePos, this.position); // Vector pointing from boid to mouse
     let distance = desired.mag(); // Distance from the boid to the mouse
   
     // Set a perception radius for mouse attraction (similar to the other behaviors)
     let perceptionRadius = 100; // You can adjust this value to control the range
-  
+    
     // If the mouse is within the perception radius, apply the attraction force
-    if (distance < perceptionRadius) {
+    if (isMousePressed || distance < perceptionRadius ) {
       desired.setMag(this.maxSpeed); // Set the desired speed towards the mouse
       let steer = p5.Vector.sub(desired, this.velocity); // Calculate steering force
       steer.limit(this.maxForce); // Limit the force applied
@@ -111,21 +115,30 @@ class Boid {
     }
   }
   
-  flock(p, boids) {
-    let alignment = this.align(p, boids);
-    let cohesion = this.cohesion(p, boids);
-    let separation = this.separation(p, boids);
-    let mouseForce = this.mouseAttraction(p); // Get the force toward the mouse
-  
-    alignment.mult(this.alignVal);
-    cohesion.mult(this.cohesionVal);
-    separation.mult(this.separationVal);
-    mouseForce.mult(this.mouseVal)
-  
-    this.acceleration.add(alignment);
-    this.acceleration.add(cohesion);
-    this.acceleration.add(separation);
-    this.acceleration.add(mouseForce); // Add mouse attraction force
+  flock(p, boids,isMousePressed) {
+    if(this.delay>0){
+        console.log(this.delay)
+        this.delay--;
+        let separation = this.separation(p, boids);
+        separation.mult(this.separationVal);
+        this.acceleration.add(separation);
+    }
+    else{
+        let alignment = this.align(p, boids);
+        let cohesion = this.cohesion(p, boids);
+        let separation = this.separation(p, boids);
+        let mouseForce = this.mouseAttraction(p, isMousePressed); // Get the force toward the mouse
+      
+        alignment.mult(this.alignVal);
+        cohesion.mult(this.cohesionVal);
+        separation.mult(this.separationVal);
+        mouseForce.mult(this.mouseVal)
+        
+        this.acceleration.add(alignment);
+        this.acceleration.add(cohesion);
+        this.acceleration.add(separation);
+        this.acceleration.add(mouseForce); // Add mouse attraction force
+    }
   }
   
 
