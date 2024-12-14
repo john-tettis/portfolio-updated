@@ -9,6 +9,7 @@ const flock = [];
 const mouseReleaseDuration = 100
 let mouseDuration = 0;
 let mouseReleased = false;
+let cluster = false;
 
 function setup(p,canvasRef) {
   const canvas = p.createCanvas(p.windowWidth, p.windowHeight);
@@ -22,8 +23,16 @@ function setup(p,canvasRef) {
 
 function draw(p) {
   // console.log({mouseReleased, isMousePressed})
-  if(p.mouseIsPressed) mouseDuration++;
+  let invert = true;
+  // 
+  if (p.mouseIsPressed) {
+    mouseDuration++;
+    invert = false;
+    cluster= (p.isKeyPressed && p.key === "Shift") ? true:cluster
+    
+  }
   p.background(p.color(12, 33, 47));
+
   for (let boid of flock) {
     if(mouseReleased === true){
       
@@ -31,7 +40,7 @@ function draw(p) {
     }
    
     boid.edges(p);
-    boid.flock(p,flock,p.mouseIsPressed);
+    boid.flock(p,flock,cluster, invert);
     boid.update(p);
     boid.show(p);
   }
@@ -48,7 +57,8 @@ export default function Sketch(ref){
         p.setup = () => setup(p, ref);
         p.draw = () => draw(p);
         p.mouseReleased= ()=> {
-          if(mouseDuration >  mouseReleaseDuration){
+          if(mouseDuration >  mouseReleaseDuration && cluster){
+            cluster=false;
             mouseReleased = true
             mouseDuration = 0;
             console.log('MOUSE RELEASE')

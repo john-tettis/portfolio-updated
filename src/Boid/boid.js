@@ -94,28 +94,30 @@ class Boid {
     }
     return steering;
   }
-  mouseAttraction(p, isMousePressed) {
+  mouseAttraction(p, cluster, invert) {
     let mousePos = p.createVector(p.mouseX, p.mouseY); // Get mouse position
     let desired = p5.Vector.sub(mousePos, this.position); // Vector pointing from boid to mouse
     let distance = desired.mag(); // Distance from the boid to the mouse
-  
+    
     // Set a perception radius for mouse attraction (similar to the other behaviors)
     let perceptionRadius = 100; // You can adjust this value to control the range
     
-    // If the mouse is within the perception radius, apply the attraction force
-    if (isMousePressed || distance < perceptionRadius ) {
-      desired.setMag(this.maxSpeed); // Set the desired speed towards the mouse
-      let steer = p5.Vector.sub(desired, this.velocity); // Calculate steering force
-      steer.limit(this.maxForce); // Limit the force applied
-  
-      return steer;
+    // If the mouse is within the perception radius, or mouse is clicked apply the attraction force
+    if (cluster || distance < perceptionRadius ) {
+        
+        desired.setMag(this.maxSpeed); // Set the desired speed towards the mouse
+        let steer = p5.Vector.sub(desired, this.velocity); // Calculate steering force
+        steer.limit(this.maxForce); // Limit the force applied
+        if(invert)steer.mult(-5)
+        return steer;
     } else {
-      // No attraction force if outside the perception radius
-      return p.createVector(0, 0);
+        // No attraction force if outside the perception radius
+        return p.createVector(0, 0);
     }
   }
   
-  flock(p, boids,isMousePressed) {
+  flock(p, boids,cluster, ratio) {
+    //if delay, do not flock, seperate!
     if(this.delay>0){
         console.log(this.delay)
         this.delay--;
@@ -127,7 +129,7 @@ class Boid {
         let alignment = this.align(p, boids);
         let cohesion = this.cohesion(p, boids);
         let separation = this.separation(p, boids);
-        let mouseForce = this.mouseAttraction(p, isMousePressed); // Get the force toward the mouse
+        let mouseForce = this.mouseAttraction(p, cluster, ratio); // Get the force toward the mouse
       
         alignment.mult(this.alignVal);
         cohesion.mult(this.cohesionVal);
