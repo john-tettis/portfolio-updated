@@ -19,7 +19,7 @@ const history = [
 
         start:"April 2024",
         end:"Present",
-        skills:["Flask","Node.js", "Express","React","SQL", "Data Analytics"]
+        skills:["Flask","Node.js","SQL", "Data Analytics", "Express","React"]
     },
     {
         title:"Marketing Representative",
