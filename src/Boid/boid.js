@@ -6,13 +6,16 @@ class Boid {
     this.velocity = p5.Vector.random2D(); // Use p5 for global methods
     this.velocity.setMag(p.random(2, 4));
     this.acceleration = p.createVector();
-    this.color = p.color(217, 133, 60);
-    this.maxForce = 0.2;
-    this.maxSpeed = 5;
-    this.alignVal =1;
-    this.cohesionVal =1.3;
-    this.separationVal = 1.2;
-    this.mouseVal = 1.5
+    this.randomize= (val, rand)=>{
+        return val -rand + p.random(rand*2)
+    }
+    this.color = p.color(this.randomize(217, 60),this.randomize(133, 20),60);
+    this.maxForce = 0.5;
+    this.maxSpeed = 8;
+    this.alignVal =1.5;
+    this.cohesionVal =2;
+    this.separationVal = 3;
+    this.mouseVal = 3
     this.delay = 0;
   }
   setDelay(int){
@@ -108,7 +111,7 @@ class Boid {
         desired.setMag(this.maxSpeed); // Set the desired speed towards the mouse
         let steer = p5.Vector.sub(desired, this.velocity); // Calculate steering force
         steer.limit(this.maxForce); // Limit the force applied
-        if(invert)steer.mult(-5)
+        if(invert)steer.mult(-3)
         return steer;
     } else {
         // No attraction force if outside the perception radius
