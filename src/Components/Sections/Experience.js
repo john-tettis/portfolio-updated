@@ -16,10 +16,11 @@ const history = [
         ],
         start: "April 2024",
         end: "Present",
-        skills: ["Flask", "Node.js", "SQL", "Data Analytics", "Express", "React"]
+        skills: ["Flask", "Node.js", "SQL", "Data Analytics", "Express", "React"],
+        NDA:true
     },
     {
-        title: "Marketing Representative",
+        title: "Marketing Operations Specialist",
         company: "Renewal by Andersen",
         description: [
             "Overhauled onboarding system by redesigning the front end and creating a backend interface to connect separate company APIs to one central portal.",
@@ -29,7 +30,8 @@ const history = [
         ],
         start: "Jan 2023",
         end: "April 2024",
-        skills: ["Python", "VBA", "Plotly", "numPy", "Flask", "SQL", "Data Analytics"]
+        skills: ["Python", "VBA", "Plotly", "numPy", "Flask", "SQL", "Data Analytics"],
+        NDA:true
     }
 ]
 
@@ -47,6 +49,7 @@ const Experience = forwardRef((props, ref) => {
                     // Render description as a list
                     description={<ul className="list-disc pl-5 space-y-1">{job.description.map((item, i) => <li key={i}>{item}</li>)}</ul>}
                     skills={job.skills}
+                    NDA={job.NDA}
                 />
             ))}
         </section>
