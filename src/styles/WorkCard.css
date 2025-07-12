@@ -56,7 +56,9 @@
 
 .card:hover{
     box-shadow: -1px 3px 3px rgba(0, 0, 0, 0.2); 
-    background: var(--color-1a)
+    background: var(--color-1a);
+    transition: all 0.3s ease;
+    transform: scale(1.05);
 }
 .card:hover .duration{
     color:white;
