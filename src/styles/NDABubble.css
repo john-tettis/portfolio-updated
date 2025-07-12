@@ -1,0 +1,36 @@
+@import url('./Utils/Color.css');
+
+.nda-bubble {
+    position: relative;
+    display: inline-block; /* Makes it behave like an inline element */
+    vertical-align: middle;
+    padding: 2px 4px;
+    background-color:var(--color-4); /* Background color */
+    color:white;
+    border-radius: 20px; /* Pill shape */    margin: 3px;
+    font-size: 10px; /* Text size */
+    font-weight: 500; /* Optional: makes text bold */
+    text-align: center; /* Center the text horizontally */
+    white-space: nowrap; /* Prevents text wrapping */
+    cursor: pointer;
+  }
+
+.nda-tooltip {
+  position: absolute;
+  left: 110%;
+  top: 50%;
+  width: 10rem;
+  max-width: 10rem;
+  text-wrap: wrap;
+  text-align: left;
+  transform: translateY(-50%);
+  background: var(--color-2);
+  color: #fff;
+  padding: 0.1rem 0.5rem;
+  border-radius: 4px;
+  font-size: 10px;
+  white-space: normal;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  pointer-events: none;
+}
