@@ -35,13 +35,13 @@
     font-size: 16px;
     line-height: 1.6;
     font-family: 'Roboto', sans-serif;
-    margin-top:.5rem;
+    margin-top:0;
 
 }
 .duration{
     position:relative;
-    margin:0;
-    top:.7rem;
+    margin-top: 1.3rem;
+    top:.8rem;
     white-space: pre-wrap;
     font-size:.8rem;
     font-weight: 400;
@@ -49,9 +49,9 @@
     
 }
 
-.card-skills, .duration{
+.card-skills{
     margin-right:.3rem;
-    margin-top:1rem;
+    margin-top:1.4rem;
 } 
 
 .card:hover{
@@ -73,7 +73,10 @@
     font-size: .9rem;
     font-weight: 600;
     /* font-style: oblique; */
-    color:var(--color-4)
+    color:var(--color-4);
+    display: flex;
+    gap: 0.5rem ;
+    align-items: center;
 }
 
 @media  screen and (max-width:1199px) {
