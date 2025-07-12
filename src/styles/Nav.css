@@ -22,8 +22,11 @@
   font-size: 18px;
   /* padding: 10px 20px; */
   transition: text-shadow 0.3s ease;
+  display:inline-block;
 }
-
+.nav a:hover{
+  transform: scale(1.1);
+}
 .nav a:not(.active):hover {
   color:var(--color-5);
   text-shadow: 0 0 5px rgba(15, 164, 175, 0.7), 0 0 10px rgba(15, 164, 175, 0.5);
