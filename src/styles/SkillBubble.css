@@ -10,8 +10,15 @@
     font-weight: 500; /* Optional: makes text bold */
     text-align: center; /* Center the text horizontally */
     white-space: nowrap; /* Prevents text wrapping */
+    cursor: pointer;
   }
   
+
+  .skill-bubble:hover{
+   transform: scale(1.1);
+   box-shadow: 0 0 10px 0 var(--color-1);
+
+  }
 
 
   /* @media  screen and (max-width:1199px) {
