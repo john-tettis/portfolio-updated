@@ -44,9 +44,11 @@
 
 .project-card:hover{
     box-shadow: -1px 3px 3px rgba(0, 0, 0, 0.2); 
-    background: var(--color-1a)
+    background: var(--color-1a);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
-
+.project-card
 .project-card-image{
     margin-top:.67rem;
     margin-bottom:auto;
