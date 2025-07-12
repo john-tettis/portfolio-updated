@@ -1,6 +1,7 @@
 .column{
     max-width:60rem;
     margin-right: 0;
+    overflow-x: visible;
 }
 .column-left{
     
