@@ -19,7 +19,6 @@
     .column{
         max-width:54rem;
         /* background-color: rgba(139, 118, 255, 0.3); */
-        overflow-x: hidden;
         margin-right: calc(50% - 39rem);
     
     }
