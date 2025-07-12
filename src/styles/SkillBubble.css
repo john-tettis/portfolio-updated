@@ -17,6 +17,7 @@
   .skill-bubble:hover{
    transform: scale(1.1);
    box-shadow: 0 0 10px 0 var(--color-1);
+   background-color:var(--color-3b);
 
   }
 
