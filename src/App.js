@@ -16,13 +16,27 @@ function App() {
 
   //loading functionality
   const [loading, setLoading] = useState(true);
+ //for smooth scrollbar hiding/ showing
+  function getScrollbarWidth() {
+    return window.innerWidth - document.documentElement.clientWidth;
+  }
 //loading screen delay:)
   useEffect(() => {
-
-    setTimeout(() => {
-      
+    const scrollbarWidth = getScrollbarWidth();
+    document.documentElement.classList.add("no-scroll");
+    document.body.style.paddingRight = `${scrollbarWidth}px`;
+    //loading screen
+    const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000); 
+    }, 2000);
+    // add in scrollbar shortly after loading screen slides up
+    setTimeout(() => {
+      document.documentElement.classList.remove("no-scroll");
+      document.body.style.paddingRight = ""; // Remove padding
+      
+    }, 4000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
