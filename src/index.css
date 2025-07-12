@@ -14,23 +14,27 @@ body {
 }
 
 /* Scrollbar styling (WebKit-based browsers) */
-.body::-webkit-scrollbar {
-  width: 12px; /* Scrollbar width */
-  background:var(--color-2);
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 12px;
+  background: var(--color-2);
 }
 
-.body::-webkit-scrollbar-track {
-  
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
   border-radius: 6px;
 }
 
-.body::-webkit-scrollbar-thumb {
-  background: rgb(169, 146, 116); /* Thumb color */
-  border-radius: 50%;
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: rgb(238, 186, 117);
+  border-radius: 5px;
+  margin: 1px;
 }
 
-.body::-webkit-scrollbar-thumb:hover {
-  background: #ffff; /* Thumb hover color */
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  background: #ffff;
 }
 
 
@@ -43,4 +47,8 @@ section{
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.no-scroll{
+  overflow: hidden;
 }
