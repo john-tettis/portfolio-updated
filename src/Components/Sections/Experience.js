@@ -9,13 +9,15 @@ const history = [
     {
         title:"Language Model Engineer",
         company:"Data Annotation Technologies",
-        description:`Specialized in enhancing the accuracy and scalability of 
-        five diverse language models by annotating datasets and creating thorough 
-        tests in Python and JavaScript. Developed and improved solid code solutions, 
-        utilizing modular design and detailed documentation. 
-        Aimed at boosting model performance through careful dataset tagging 
-        and strict validation protocols.
-        `,
+        description:`Collaborate with top AI firms (Cursor, Claude, Google, Meta etc) to build and
+                    enhance developer tools.
+                    Create scenarios where current AI models fail (large codebases, niche errors,
+                    complex industry situations), then create, test, and verify solutions.
+                    Work with clients to pinpoint model failures, create plans for improvement, and
+                    structure projects to gather and clean relevant data.
+                    Use the data gathered to improve models and deliver expected benchmarks to
+
+                            `,
 
         start:"April 2024",
         end:"Present",
@@ -24,13 +26,12 @@ const history = [
     {
         title:"Marketing Representative",
         company:"Renewal by Andersem",
-        description:`Streamlined operational workflows by creating custom Microsoft 
-        Teams bots, which greatly improved team communication and task management. 
-        Automated performance metric integrations using tools like Microsoft VBA and  Python, 
-        allowing for more effective tracking and analysis. Conducted regular training 
-        sessions and offered peer coaching to improve team performance and field results. 
-        Led collaborative efforts to enhance marketing strategies, 
-        consistently achieving measurable outcomes.`,
+        description:`Led team meetings, enhancing collaboration and efficiency.
+                    Developed Microsoft Teams bots, streamlining workflows.
+                    Automated performance metric integrations from multiple tracking platforms,
+                    improving performance analysis.
+                    Conducted regular training.
+                    Coached peers, elevating field metrics and result`,
         start:"Jan 2023",
         end:"April 2024",
         skills:["Python", "VBA","Plotly","numPy", "Flask","SQL", "Data Analytics"]
