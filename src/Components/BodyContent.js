@@ -4,6 +4,7 @@ import Column from './Utils/Column';
 import '../styles/BodyContent.css'
 import Nav from './Nav';
 import ScrollSection from './ScrollSection';
+import SocialLinks from './Utils/SocialLinks';
 
 const BodyContent= ({scrollRef,navRefs, loading})=>{
     
@@ -16,6 +17,7 @@ const BodyContent= ({scrollRef,navRefs, loading})=>{
             navRefs={navRefs}
             scrollRef={scrollRef}
             />
+            <SocialLinks />
         </Column>
         <Column><ScrollSection loading={loading} navRefs={navRefs} ref={scrollRef}/></Column>
 

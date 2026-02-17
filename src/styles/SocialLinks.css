@@ -1,0 +1,40 @@
+@import url('./Utils/Color.css');
+
+.social-links {
+  display: flex;
+  gap: 0.9rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.social-link {
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 2px solid var(--color-3);
+  border-radius: 999px;
+  background: var(--color-1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.social-link svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: currentColor;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  color: var(--color-3);
+  box-shadow: 2px 2px 8px rgba(15, 164, 175, 0.5);
+  border: 2px solid #00000000
+}
+
+@media screen and (max-width: 1199px) {
+  .social-links {
+    display: none;
+  }
+}
