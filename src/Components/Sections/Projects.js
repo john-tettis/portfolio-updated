@@ -3,6 +3,7 @@ import React, {forwardRef} from 'react';
 import ProjectCard from '../Utils/ProjectCard'
 import raspberryPI from '../../Assets/Images/raspberry-pi.png'
 import dat from '../../Assets/Images/DAT.png'
+import distorter from '../../Assets/Images/Distorter.png'
 import SectionHeader from '../Utils/SectionHeader';
 
 
@@ -19,15 +20,28 @@ const projects = [
         imgUrl:dat,
         skills:["JavaScript", "HTML","Chrome API"]
     },
+    // {
+    //     title:"Raspberry PI Video Server",
+    //     link:"https://github.com/john-tettis/RaspberryPi-remote-video-server",
+    //     description:`Remote video server run on a Raspberry PI. 
+    //     Receives Youtube video link from user's device, runs selenium, starts projector, and displays said 
+    //     video over the projector. Features include favorited youtube videos, audio control, and more!
+    //     `,
+    //     imgUrl:raspberryPI,
+    //     skills:["Flask", "Selenium","Static Web Serving","SQL", "Data Analytics"]
+    // }
     {
-        title:"Raspberry PI Video Server",
-        link:"https://github.com/john-tettis/RaspberryPi-remote-video-server",
-        description:`Remote video server run on a Raspberry PI. 
-        Receives Youtube video link from user's device, runs selenium, starts projector, and displays said 
-        video over the projector. Features include favorited youtube videos, audio control, and more!
+         title:"JT-Distorter VST Plugin",
+        link:"https://github.com/john-tettis/JT-Distorter",
+        repo:"",
+        description:`
+        VST3 Plugin built in C++ using the JUCE framework.
+        Features multiple distortion algorithms, a custom GUI, and Over Sampling anti-aliasing.
+        Released on GitHub and available for free download. Made out of passion for music Production and audio engineering.
+
         `,
-        imgUrl:raspberryPI,
-        skills:["Flask", "Selenium","Static Web Serving","SQL", "Data Analytics"]
+        imgUrl:distorter,
+        skills:["C++", "JUCE Framework","VST3 Plugin Development", "DAW Integration"]
     }
     
 ]
