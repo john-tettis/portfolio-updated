@@ -10,8 +10,8 @@ const history = [
         title:"Language Model Engineer",
         company:"Data Annotation Technologies",
         description:[
-            "Collaborate with top AI firms (Cursor, Claude, Google, Meta, etc.) to build and enhance developer tools.",
-            "Create scenarios where current AI models fail (large codebases, niche errors, and complex industry situations), then create, test, and verify solutions.",
+            "Collaborate with top AI firms  to build and enhance developer tools.",
+            "Create scenarios where current AI models fail then create, test, and verify solutions.",
             "Work with clients to pinpoint model failures, create plans for improvement, and structure projects to gather and clean relevant data.",
             "Use gathered data to improve models and deliver expected benchmark outcomes."
         ],
