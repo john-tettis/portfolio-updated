@@ -82,3 +82,13 @@
     
     
 }
+
+#projects {
+    margin-bottom: 35vh;
+}
+
+@media screen and (max-width: 1199px) {
+    #projects {
+        margin-bottom: 45vh;
+    }
+}
