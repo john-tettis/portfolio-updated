@@ -29,7 +29,11 @@ const WorkCard = ({ title, company, description, start, end, skills,NDA =false})
                         />
                     ))}
                 </div>
-                <p className="card-description card-column-right">{description}</p>
+                <ul className="card-description card-column-right">
+                  {description.map((point, index) => (
+                    <li key={index}>{point}</li>
+                  ))}
+                </ul>
             </div>
         </div>
     )
