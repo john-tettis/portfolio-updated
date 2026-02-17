@@ -1,9 +1,11 @@
 import React from 'react';
 import '../../styles/SocialLinks.css';
 
-const SocialLinks = () => {
+const SocialLinks = ({ className = '' }) => {
+  const classes = `social-links ${className}`.trim();
+
   return (
-    <div className="social-links" aria-label="Social links">
+    <div className={classes} aria-label="Social links">
       <a
         className="social-link"
         href="https://github.com/john-tettis"

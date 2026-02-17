@@ -3,6 +3,7 @@ import '../styles/Nav.css';
 import useSectionObserver from './hooks/useSectionObserver';
 import Hamburger from './Utils/Hamburger';
 import useScrollTo from './hooks/useScrollTo';
+import SocialLinks from './Utils/SocialLinks';
 
 const Nav = ({ navRefs }) => {
   const [menu, setMenu] = useState(false);
@@ -54,6 +55,7 @@ const Nav = ({ navRefs }) => {
         </li>
       </div>
       <Hamburger menu={menu} toggleMenu={toggleMenu} />
+      <SocialLinks className="nav-mobile-social" />
     </div>
   );
 };

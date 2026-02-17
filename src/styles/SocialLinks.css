@@ -7,6 +7,10 @@
   margin-left: 1rem;
 }
 
+.nav-mobile-social {
+  display: none;
+}
+
 .social-link {
   width: 2rem;
   height: 2rem;
@@ -36,5 +40,23 @@
 @media screen and (max-width: 1199px) {
   .social-links {
     display: none;
+  }
+
+  .nav-mobile-social {
+    display: flex;
+    position: fixed;
+    top: 4.2rem;
+    right: 1rem;
+    z-index: 999;
+    margin: 0;
+    padding: 0.45rem 0.6rem;
+    border-radius: 999px;
+    background: var(--color-2a);
+    backdrop-filter: blur(30px);
+  }
+
+  .social-link {
+    width: 1.9rem;
+    height: 1.9rem;
   }
 }
