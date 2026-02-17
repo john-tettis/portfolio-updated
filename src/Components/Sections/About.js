@@ -25,7 +25,7 @@ const About= forwardRef(({projectRef},ref)=>{
         </p>
         <p className="about-paragraph">
             When I am not hunched over my computer trying to find that god forsaken bug that has broken my whole application,
-            I am usually creating music, learning a new trade or skill, or taking a hike with definetly not enough water (its never enough).
+            I am usually creating music, learning a new trade or skill, or taking a hike with definitely not enough water (its never enough).
         </p>
     </section>
         
