@@ -2,6 +2,7 @@
 import React, {forwardRef} from 'react';
 import ProjectCard from '../Utils/ProjectCard'
 import raspberryPI from '../../Assets/Images/raspberry-pi.png'
+import revelix from '../../Assets/Images/revelix.png'
 import dat from '../../Assets/Images/DAT.png'
 import distorter from '../../Assets/Images/Distorter.png'
 import SectionHeader from '../Utils/SectionHeader';
@@ -19,6 +20,15 @@ const projects = [
         `,
         imgUrl:dat,
         skills:["JavaScript", "HTML","Chrome API"]
+    },
+    {
+        title:"Revelix Health",
+        link:"https://revelixhealth.com/products/groundwave%E2%84%A2-silver-grounding-sheets",
+        description:`Drop Shipping site build for grounding sheets. The branding, copywriting, marketing design, and custom components were all built by me.
+         Built using shopify and stripe.
+        `,
+        imgUrl:revelix,
+        skills:["Shopify", "Marketing","Product Design","Stripe", "Meta Ads"]
     },
     // {
     //     title:"Raspberry PI Video Server",
