@@ -6,19 +6,17 @@ import SectionHeader from '../Utils/SectionHeader';
 
 
 const history = [
-    {
-        title:"Language Model Engineer",
-        company:"Data Annotation Technologies",
-        description:[
-            "Collaborate with top AI firms  to build and enhance developer tools.",
-            "Create scenarios where current AI models fail then create, test, and verify solutions.",
-            "Work with clients to pinpoint model failures, create plans for improvement, and structure projects to gather and clean relevant data.",
-            "Use gathered data to improve models and deliver expected benchmark outcomes."
+   {
+        title: "AI Data Specialist",
+        company: "Surge AI",
+        description: [
+            "Developed accurate, from-scratch reference solutions in Python, TypeScript, and React to train AI models on complex programming logic and edge cases.",
+            "Wrote multi-turn technical prompts and heavily refactored AI-generated code to enforce best practices in modularity, performance, and documentation.",
+            "Debugged and rewrote flawed algorithms to generate precise training datasets, directly improving the code-generation accuracy of five distinct language models."
         ],
-
-        start:"April 2024",
-        end:"Present",
-        skills:["Flask","Node.js","SQL", "Data Analytics", "Express","React"]
+        start: "April 2024",
+        end: "Present",
+        skills: ["Python", "TypeScript", "React", "Node.js", "LLM Evaluation", "Test-Driven Development"]
     },
     {
         title:"Marketing Representative",
