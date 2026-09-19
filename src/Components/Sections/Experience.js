@@ -19,20 +19,19 @@ const history = [
         skills: ["Python", "TypeScript", "React", "Node.js", "LLM Evaluation", "Test-Driven Development"]
     },
     {
-        title:"Marketing Representative",
-        company:"Renewal by Andersem",
-        description:[
-            "Led team meetings, enhancing collaboration and efficiency.",
-            "Developed Microsoft Teams bots, streamlining workflows.",
-            "Automated performance metric integrations from multiple tracking platforms, improving performance analysis.",
-            "Conducted regular training sessions.",
-            "Coached peers, elevating field metrics and results."
+        title: "Marketing Operations Specialist",
+        company: "Renewal by Andersen",
+        description: [
+            "Architected a centralized onboarding portal by developing a custom frontend and a Flask backend to integrate disparate enterprise APIs.",
+            "Programmed and deployed custom Microsoft Teams bots using Python to automate task routing and streamline internal workflows.",
+            "Engineered automated data pipelines using Python, SQL, and VBA to extract, transform, and load performance metrics into centralized analytics dashboards.",
+            "Translated business requirements into technical automation solutions, driving measurable improvements in cross-functional operational efficiency."
         ],
-        start:"Jan 2023",
-        end:"April 2024",
-        skills:["Python", "VBA","Plotly","numPy", "Flask","SQL", "Data Analytics"]
+        start: "Jan 2023",
+        end: "April 2024",
+        skills: ["Python", "Flask", "SQL", "VBA", "REST APIs", "Plotly", "NumPy"],
+        NDA: true
     }
-    
 
 ]
 const Experience= forwardRef((props,ref)=>{
