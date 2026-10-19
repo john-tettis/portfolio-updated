@@ -1,0 +1,12 @@
+[[redirects]]
+  from = "/fretmind/*"
+  to = "https://fretmind.netlify.app/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/fret-mind/*"
+  to = "https://fretmind.netlify.app/:splat"
+  status = 200
+  force = true
+
